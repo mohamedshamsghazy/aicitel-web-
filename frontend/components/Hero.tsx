@@ -6,26 +6,26 @@ export default function Hero() {
     const t = useTranslations('Hero');
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-20">
+        <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-20 md:pt-24">
             {/* Background Image */}
             <div
-                className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat bg-fixed"
+                className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: 'url(/images/hero_bg.png)' }}
             >
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-slate-900/40"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-slate-900/70"></div>
             </div>
 
             <div className="relative z-10 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-8 text-white rtl:text-right">
                     <ScrollReveal>
-                        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-blue-200 pb-2">
                                 {t('headlineHighlight')}
                             </span>
                             {t('headline')}
                         </h1>
 
-                        <p className="text-lg md:text-2xl text-slate-100 max-w-xl font-light leading-relaxed rtl:mr-0 rtl:ml-auto">
+                        <p className="text-base md:text-xl lg:text-2xl text-slate-100 max-w-xl font-light leading-relaxed rtl:mr-0 rtl:ml-auto">
                             {t('subline')}
                         </p>
 
