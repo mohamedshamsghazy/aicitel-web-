@@ -158,7 +158,8 @@
         "partner": "Partners",
         "solutions": "Solutions",
         "iso": "ISO 9001 Compliant",
-        "gdpr": "GDPR Secure"
+        "gdpr": "GDPR Secure",
+        "cookiePolicy": "Cookie Policy"
     },
     "Index": {
         "title": "Aicitel - Premium Direct Sales Agency Germany",
@@ -171,6 +172,27 @@
         "career": "Careers",
         "partner": "Partners",
         "contact": "Contact"
+    },
+    "CookiePolicy": {
+        "metaTitle": "Cookie Policy - Aicitel",
+        "metaDescription": "Learn how Aicitel uses cookies to improve your browsing experience.",
+        "title": "Cookie Policy",
+        "whatAreCookies": {
+            "title": "What Are Cookies?",
+            "text": "Cookies are small text files placed on your device to help us provide a better user experience. They allow us to recognize your browser and remember certain information."
+        },
+        "howWeUse": {
+            "title": "How We Use Cookies",
+            "text": "We use cookies for the following purposes:",
+            "essential": "Essential Cookies: Required for the website to function properly",
+            "analytics": "Analytics Cookies: Help us understand how visitors interact with our website",
+            "marketing": "Marketing Cookies: Used to deliver relevant advertisements"
+        },
+        "managing": {
+            "title": "Managing Cookies",
+            "text": "You can control and manage cookies through your browser settings. Please note that removing or blocking cookies may impact your user experience."
+        },
+        "lastUpdated": "Last Updated"
     },
     "Solutions": {
         "title": "Our Solutions",

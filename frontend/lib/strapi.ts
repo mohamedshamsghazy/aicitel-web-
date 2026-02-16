@@ -1,9 +1,17 @@
 import qs from 'qs';
+import { STRAPI_URL, isBackendAvailable } from './env';
 
-export const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
+// Removed localhost fallback - production must have NEXT_PUBLIC_STRAPI_URL set
+export { STRAPI_URL };
 
 export async function fetchAPI(path: string, urlParamsObject = {}, options = {}) {
     try {
+        // Check if backend is configured
+        if (!isBackendAvailable()) {
+            console.warn('[Strapi] Backend URL not configured (NEXT_PUBLIC_STRAPI_URL missing)');
+            throw new Error('Backend not configured');
+        }
+
         const headers: Record<string, string> = {
             'Content-Type': 'application/json',
         };

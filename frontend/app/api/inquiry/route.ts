@@ -69,8 +69,13 @@ export async function POST(req: NextRequest) {
         }
 
         // 5. Strapi Submission
-        const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
+        const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL;
         const STRAPI_TOKEN = process.env.STRAPI_API_TOKEN;
+
+        if (!STRAPI_URL) {
+            Logger.critical('API: NEXT_PUBLIC_STRAPI_URL is not set.');
+            return NextResponse.json({ error: 'Backend not configured' }, { status: 503 });
+        }
 
         if (!STRAPI_TOKEN) {
             Logger.critical('API: STRAPI_API_TOKEN is not set.');

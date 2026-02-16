@@ -158,7 +158,8 @@
         "career": "Karriere & Jobs",
         "partner": "Für Unternehmen",
         "iso": "ISO 9001 Konform",
-        "gdpr": "DSGVO Sicher"
+        "gdpr": "DSGVO Sicher",
+        "cookiePolicy": "Cookie-Richtlinie"
     },
     "Index": {
         "title": "Aicitel - Premium Direktvertriebsagentur Deutschland",
@@ -171,6 +172,27 @@
         "career": "Karriere",
         "partner": "Partner",
         "contact": "Kontakt"
+    },
+    "CookiePolicy": {
+        "metaTitle": "Cookie-Richtlinie - Aicitel",
+        "metaDescription": "Erfahren Sie, wie Aicitel Cookies verwendet, um Ihr Browsing-Erlebnis zu verbessern.",
+        "title": "Cookie-Richtlinie",
+        "whatAreCookies": {
+            "title": "Was sind Cookies?",
+            "text": "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, um uns zu helfen, eine bessere Benutzererfahrung zu bieten. Sie ermöglichen es uns, Ihren Browser zu erkennen und bestimmte Informationen zu speichern."
+        },
+        "howWeUse": {
+            "title": "Wie wir Cookies verwenden",
+            "text": "Wir verwenden Cookies für folgende Zwecke:",
+            "essential": "Wesentliche Cookies: Erforderlich für die ordnungsgemäße Funktion der Website",
+            "analytics": "Analyse-Cookies: Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren",
+            "marketing": "Marketing-Cookies: Werden verwendet, um relevante Werbung zu liefern"
+        },
+        "managing": {
+            "title": "Cookies verwalten",
+            "text": "Sie können Cookies über Ihre Browsereinstellungen steuern und verwalten. Bitte beachten Sie, dass das Entfernen oder Blockieren von Cookies Ihre Benutzererfahrung beeinträchtigen kann."
+        },
+        "lastUpdated": "Zuletzt aktualisiert"
     },
     "Solutions": {
         "title": "Unsere Lösungen",

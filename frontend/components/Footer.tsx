@@ -124,7 +124,7 @@ export default function Footer() {
                     <div className="flex gap-6">
                         <Link href="/impressum" className="hover:text-primary transition-colors">{t('imprint')}</Link>
                         <Link href="/privacy" className="hover:text-primary transition-colors">{t('privacy')}</Link>
-                        <Link href="/cookie-policy" className="hover:text-primary transition-colors">Cookie Policy</Link>
+                        <Link href="/cookie-policy" className="hover:text-primary transition-colors">{t('cookiePolicy')}</Link>
                     </div>
                 </div>
             </div>
