@@ -54,7 +54,7 @@
     "featuredOrder": {
       "type": "integer"
     },
-    "status": {
+    "jobStatus": {
       "type": "string",
       "default": "Open"
     },

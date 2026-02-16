@@ -49,7 +49,7 @@ export default function ContactDetails() {
                         <Link
                             key={index}
                             href={info.href}
-                            className="flex flex-col items-center text-center p-10 bg-white rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 group"
+                            className="flex flex-col items-center text-center p-10 bg-white rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 group"
                         >
                             <div className="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
                                 {info.icon}

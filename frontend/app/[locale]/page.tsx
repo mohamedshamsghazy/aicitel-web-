@@ -18,18 +18,20 @@ export default function HomePage() {
         <main className="min-h-screen bg-white font-sans text-slate-900 selection:bg-primary/20 selection:text-primary scroll-smooth">
             <Hero />
             <TrustSection />
-            <Mission />
-            <CaseStudiesSection />
-            <ProductPartner />
-            <ComplianceSection />
-            <UberUns />
+            <ProductPartner /> {/* Services/Solutions */}
             <CareerOpportunities />
             <BenefitsHighlight />
+            <Contact />
+
+            {/* Secondary Sections */}
+            <Mission />
+            <CaseStudiesSection />
+            <ComplianceSection />
+            <UberUns />
             <Testimonials />
             <MentoringDetails />
             <EmployeeSuccess />
             <FAQSection />
-            <Contact />
         </main>
     );
 }

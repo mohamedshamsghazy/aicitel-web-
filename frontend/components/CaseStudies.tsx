@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 export default function CaseStudies() {
     const t = useTranslations('CaseStudies');
 
-    const cases = ['case1', 'case2', 'case3'];
+    const cases = ['case1'];
 
     return (
         <section className="py-24 bg-slate-50">

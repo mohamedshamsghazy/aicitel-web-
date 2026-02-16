@@ -9,9 +9,9 @@
         "applyNow": "Jetzt bewerben"
     },
     "Hero": {
-        "headlineHighlight": "Skalierbarer Vertrieb",
-        "headline": "Deutschlands Premium-Infrastruktur für den Direktvertrieb",
-        "subline": "Wir skalieren Vertriebsorganisationen für Energie- und Telekommunikationskonzerne. Compliance-konform. Datengetrieben. Zertifiziert.",
+        "headlineHighlight": "Vertriebsinfrastruktur",
+        "headline": "Skalierbarer Direktvertrieb für Energie & Telekommunikation",
+        "subline": "Wir bauen konforme, leistungsstarke Vertriebsorganisationen. Von Halle (Saale) bis zur bundesweiten Abdeckung.",
         "ctaProject": "Für Unternehmen: Umsatz skalieren",
         "ctaJoin": "Für Talente: Karriere starten",
         "badgeTopCompany": "Compliance",
@@ -22,7 +22,12 @@
         "badgeMember": "Zertifiziert"
     },
     "TrustSection": {
-        "subtitle": "GEBAUT FÜR REGULIERTE BRANCHEN"
+        "subtitle": "GEBAUT FÜR REGULIERTE BRANCHEN",
+        "sectors": {
+            "energy": "Energie",
+            "telecom": "Telekommunikation",
+            "infrastructure": "Infrastruktur"
+        }
     },
     "Mission": {
         "headline": "Unser Standard",
@@ -44,10 +49,10 @@
         "imageLeadershipLabel": "Führungsteam",
         "imageLeadershipHeadline": "Erfahrung trifft Innovation",
         "headline": "Strukturierte Vertriebsoperationen",
-        "text": "Mit Hauptsitz in <bold>Halle (Saale)</bold> ist Aicitel ein strategischer Wachstumspartner für DAX-Konzerne und Marktführer. Wir kombinieren lokalen Fokus mit nationaler Ambition.",
+        "text": "Mit Hauptsitz in <bold>Halle (Saale)</bold> ist Aicitel ein strategischer Wachstumspartner für Energieversorger. Wir kombinieren lokale Expertise mit standardisierten Prozessen für konsistente Ergebnisse.",
         "statEmployees": "Vertriebsprofis",
-        "statLocations": "Regionale Hubs",
-        "statCustomers": "Neukunden",
+        "statLocations": "Zentraler Hub",
+        "statCustomers": "Neukundengewinnung",
         "cta": "Unternehmensprofil ansehen"
     },
     "CareerOpportunities": {
@@ -92,28 +97,51 @@
         "text": "Aicitel ist eine spezialisierte Unternehmensberatung für High-End-Vertriebslösungen. Wir bieten ambitionierten Talenten einen strukturierten Karriereweg zur finanziellen Unabhängigkeit und Führungsverantwortung."
     },
     "MentoringDetails": {
-        "block1Title": "Dediziertes Mentoring",
+        "block1Title": "1 zu 1 Mentoring",
         "block1Text": "Erfolg hinterlässt Spuren. Sie werden einem Senior-Mentor zugeteilt, der den Weg vor Ihnen gegangen ist. Tägliche Feedback-Schleifen garantieren tägliche Verbesserung.",
         "block2Title": "Kontinuierliche Weiterbildung",
         "block2Text": "Zugang zu unserer digitalen Lernplattform und wöchentlichen Workshops zu Verhandlung, Psychologie und Führung."
     },
     "EmployeeSuccess": {
         "headline": "Bewiesene Karrierewege",
-        "text": "Unsere Managementstruktur basiert auf Leistung. Wir befördern von innen heraus basierend auf operativer Exzellenz.",
+        "text": "Unsere Managementstruktur basiert auf Leistung. Wir befördern von innen heraus basierend auf klaren Vorraussetzungen.",
         "imageLabelTitle": "Management Team",
         "imageLabelText": "Auf Leistung gebaut."
     },
     "ProductPartner": {
         "label": "B2B Lösungen",
-        "headline": "Skalieren Sie Ihre Neukundengewinnung",
-        "text": "Verlassen Sie sich nicht auf unvorhersehbare Marketingkanäle. Unsere Direktvertriebsorganisation liefert garantierte Interaktionen und unterschriebene Verträge mit hohem Customer Lifetime Value.",
-        "card1Title": "Skalierbarer Einsatz",
-        "card1Text": "Einsatz zertifizierter Agenten in neuen Regionen mit standardisiertem Onboarding.",
-        "card2Title": "Markenschutz",
-        "card2Text": "Compliance-First Ansatz garantiert perfekte Markenrepräsentation.",
-        "card3Title": "Kosteneffizienz",
-        "card3Text": "Variables Kostenmodell. Sie zahlen für Ergebnisse, nicht für Stunden.",
+        "headline": "Beratung",
+        "text": "",
+        "card1Title": "Energieanalyse & Marktvergleich",
+        "card1Text": "Wir analysieren Ihre aktuellen Strom- und Gasverträge und vergleichen diese mit den besten verfügbaren Marktkonditionen.",
+        "card2Title": "Individuelle Tarifmodelle",
+        "card2Text": "Maßgeschneiderte Lösungen für kleine Betriebe, Mittelstand und Großunternehmen – abgestimmt auf Verbrauch, Laufzeit und Risikoprofil.",
+        "card3Title": "Preisverhandlung & Anbieterzugang",
+        "card3Text": "Durch starke Partnernetzwerke sichern wir wettbewerbsfähige Konditionen und stabile Vertragsstrukturen.",
+        "card4Title": "Langfristige Kostenoptimierung",
+        "card4Text": "Nicht nur kurzfristige Einsparung, sondern strategische Planung für planbare Energiekosten.",
         "cta": "Vertriebsaudit anfordern"
+    },
+    "Services": {
+        "hero": {
+            "highlight": "Globaler Einfluss.",
+            "title": "Präzisionstechnik.",
+            "subtitle": "Unser umfassendes Dienstleistungsangebot wurde entwickelt, um Unternehmen an die Spitze der Innovation zu bringen."
+        },
+        "items": {
+            "infrastructure": {
+                "title": "AI-Infrastruktur",
+                "description": "GPU-Orchestrierung auf Unternehmensniveau und skalierbare Modellbereitstellung."
+            },
+            "consulting": {
+                "title": "Strategische Beratung",
+                "description": "Datengetriebene Roadmaps zur Integration von KI in Ihre Kerngeschäftsprozesse."
+            },
+            "development": {
+                "title": "Maßgeschneiderte Lösungen",
+                "description": "Individuelle Softwareentwicklung, die komplexe betriebliche Herausforderungen präzise löst."
+            }
+        }
     },
     "Contact": {
         "label": "Kontakt",
@@ -142,9 +170,9 @@
     "Footer": {
         "logoSubtitle": "Der Standard für Exzellenz im Direktvertrieb in Deutschland.",
         "preFooter": {
-            "headline": "Bereit für Skalierung?",
-            "subline": "Sprechen Sie mit unseren Strategen über Ihre Vertriebsziele.",
-            "cta": "Audit anfordern"
+            "headline": "Bereit für deinen nächsten Karriereschritt?",
+            "subline": "Starte im strukturierten Direktvertrieb mit klarer Aufstiegsperspektive und leistungsorientiertem Einkommen.",
+            "cta": "Jetzt bewerben"
         },
         "imprint": "Impressum",
         "privacy": "Datenschutz",
@@ -192,7 +220,10 @@
             "title": "Cookies verwalten",
             "text": "Sie können Cookies über Ihre Browsereinstellungen steuern und verwalten. Bitte beachten Sie, dass das Entfernen oder Blockieren von Cookies Ihre Benutzererfahrung beeinträchtigen kann."
         },
-        "lastUpdated": "Zuletzt aktualisiert"
+        "lastUpdated": "Zuletzt aktualisiert",
+        "settings": "Privatsphäre-Einstellungen:",
+        "details": "Details in unserer",
+        "policyLink": "Datenschutzerklärung"
     },
     "Solutions": {
         "title": "Unsere Lösungen",
@@ -223,53 +254,53 @@
             "tag": "Energie"
         },
         "case2": {
-            "title": "Telekom Rollout",
-            "metric": "Regional",
-            "desc": "Glasfaser-Infrastrukturausbau",
+            "title": "Telekom Vertrieb",
+            "metric": "Spezialisiert",
+            "desc": "Direktvertriebs-Framework",
             "tag": "Telekom"
         },
         "case3": {
-            "title": "Markteintritt",
-            "metric": "Rapid",
-            "desc": "Time-to-Market Deployment",
+            "title": "Infrastruktur",
+            "metric": "Strategisch",
+            "desc": "Vertriebsprozess-Optimierung",
             "tag": "Infra"
         }
     },
     "Testimonials": {
-        "title": "Partner & Menschen",
+        "title": "Partner & Prinzipien",
         "employees": {
-            "tab": "Unser Team",
+            "tab": "Unsere Prinzipien",
             "item1": {
                 "quote": "Aicitel erschafft Gewinner. Wenn du bereit bist hart zu arbeiten, gibt es keine Grenzen.",
-                "name": "Thomas K.",
-                "role": "Sales Manager"
+                "name": "Standardisiertes Onboarding",
+                "role": "Academy"
             },
             "item2": {
                 "quote": "Strukturiert, professionell, fair. Alles was ich woanders vermisst habe.",
-                "name": "Julia M.",
-                "role": "Teamleiterin"
+                "name": "Klarer Karrierepfad",
+                "role": "Wachstum"
             },
             "item3": {
                 "quote": "Die beste Vertriebsschule des Landes. Punkt.",
-                "name": "Lukas B.",
-                "role": "Sales Rep"
+                "name": "Meritokratie",
+                "role": "Kultur"
             }
         },
         "partners": {
             "tab": "Unternehmenspartner",
             "item1": {
                 "quote": "Aicitel senkte unsere CAC um 40% bei gleichzeitig höherer Kundenbindung als unsere internen Teams.",
-                "name": "Führender Energieversorger",
-                "role": "VP Sales"
+                "name": "Energieversorger",
+                "role": "Sales Director"
             },
             "item2": {
-                "quote": "Sie ermöglichten uns den gleichzeitigen Start in 3 neuen Bundesländern.",
-                "name": "Nationaler Netzbetreiber",
+                "quote": "Sie ermöglichten es uns, effektiv in neue Regionen zu expandieren.",
+                "name": "Telekom-Betreiber",
                 "role": "CEO"
             },
             "item3": {
                 "quote": "Compliance war unsere größte Sorge. Die Standards von Aicitel sind höher als unsere eigenen.",
-                "name": "Greentech Konzern",
+                "name": "Tech-Firma",
                 "role": "COO"
             }
         }
@@ -311,9 +342,9 @@
     },
     "KPI": {
         "experience": "Sales Exzellenz",
-        "agents": "Aktive Berater",
+        "agents": "Onboarding",
         "applications": "Talent Pipeline",
-        "partners": "Unternehmenspartner"
+        "partners": "Partnerschaften"
     },
     "Compliance": {
         "title": "Compliance & Ethik",
@@ -333,9 +364,10 @@
     },
     "EmptyStates": {
         "faq": {
-            "title": "Keine Fragen gefunden",
-            "description": "Bitte versuchen Sie es später erneut oder kontaktieren Sie den Support.",
-            "cta": "Support kontaktieren"
+            "title": "Noch keine FAQs",
+            "description": "Wir stellen derzeit die häufigsten Fragen zusammen. Bitte schauen Sie bald wieder vorbei.",
+            "cta": "Support kontaktieren",
+            "noAnswer": "Antwort folgt in Kürze."
         },
         "career": {
             "title": "Keine offenen Stellen",
@@ -360,7 +392,7 @@
             "zip": "06128",
             "country": "Deutschland"
         },
-        "expansionNote": "Hauptsitz in Halle (Saale). Strategische Expansion geplant."
+        "expansionNote": "Hauptsitz in Halle (Saale). Bereit für strategische Expansion."
     },
     "CareerRoadmap": {
         "title": "Ihr Weg zur Führungskraft",
@@ -440,6 +472,12 @@
             "sending": "Sende...",
             "submitApplicant": "Bewerbung absenden",
             "submitPartner": "Partnerschaft anfragen"
+        },
+        "contactLabels": {
+            "visitUs": "Besuchen Sie uns",
+            "emailUs": "E-Mail senden",
+            "callUs": "Anrufen",
+            "address": "Rauchfußstraße 2b<br />06128 Halle (Saale)"
         }
     },
     "PartnerSection": {
@@ -495,7 +533,14 @@
         "metaDescription": "Skalieren Sie Ihren Umsatz mit unserer Direktvertriebsorganisation."
     },
     "PageTitles": {
-        "partner": "Partner werden"
+        "partner": "Partner werden",
+        "services": "Unsere Leistungen"
+    },
+    "NotFound": {
+        "title": "Seite nicht gefunden",
+        "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+        "ctaHome": "Zurück zur Startseite",
+        "ctaHelp": "Support kontaktieren"
     },
     "ApplicantFAQ": {
         "title": "Häufig gestellte Fragen",
@@ -513,6 +558,43 @@
     "AboutPage": {
         "metaTitle": "Über Aicitel - Leistung & Integrität",
         "metaDescription": "Erfahren Sie mehr über Deutschlands führende Direktvertriebsagentur."
+    },
+    "DataSales": {
+        "title": "Datengetriebener Vertrieb",
+        "description": "Wir überlassen nichts dem Zufall. Durch unser proprietäres Performance-Tracking-System analysieren wir KPIs in Echtzeit, optimieren Verkaufsgebiete und steigern kontinuierlich die Abschlussquoten unserer Teams."
+    },
+    "FAQSectionTitle": {
+        "title": "Häufig gestellte Fragen"
+    },
+    "System": {
+        "title": "Unser System",
+        "steps": {
+            "recruiting": {
+                "title": "Recruiting",
+                "description": "Auswahl der besten Talente durch strukturiertes Bewerbungsverfahren."
+            },
+            "training": {
+                "title": "Training",
+                "description": "Intensive Schulung in Produktwissen und Verkaufstechniken."
+            },
+            "deployment": {
+                "title": "Einsatz",
+                "description": "Professioneller Kundenkontakt und Beratung vor Ort."
+            },
+            "optimization": {
+                "title": "Optimierung",
+                "description": "Kontinuierliche Analyse und Verbesserung der Ergebnisse."
+            }
+        }
+    },
+    "Common": {
+        "getDirections": "Route planen",
+        "plannedExpansion": "Geplante Expansion",
+        "globalImpact": "Globaler Einfluss."
+    },
+    "PartnerInvite": {
+        "title": "Zusammen wachsen.",
+        "subtitle": "Werden Sie Teil unseres Netzwerks."
     },
     "ContactNew": {
         "hero": {
@@ -552,7 +634,49 @@
             "cv": "Lebenslauf (PDF)",
             "submitBusiness": "Audit anfordern",
             "submitCareer": "Bewerbung absenden",
-            "privacy": "Ihre Daten sind sicher und werden streng vertraulich behandelt."
+            "privacy": "Ihre Daten sind sicher und werden streng vertraulich behandelt.",
+            "liveSupport": "Live-Support",
+            "emailLabel": "E-Mail:",
+            "phoneLabel": "Telefon:",
+            "features": {
+                "confidentiality": "Volle Vertraulichkeit garantiert.",
+                "priority": "Priorisierter Support-Kanal.",
+                "kpis": "Auf Ihre KPIs zugeschnitten.",
+                "certification": "Volle Zertifizierung inklusive.",
+                "paycheck": "Bestimmen Sie Ihr Gehalt.",
+                "merit": "Leistungsbasierter Aufstieg."
+            }
+        }
+    },
+    "ServicesPage": {
+        "metaTitle": "Unsere Leistungen - Aicitel",
+        "metaDescription": "Entdecken Sie unsere umfassenden Vertriebslösungen."
+    },
+    "CookieConsent": {
+        "settings": "Cookie-Einstellungen.",
+        "details": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Lesen Sie unsere ",
+        "policyLink": "Datenschutzerklärung",
+        "decline": "Ablehnen",
+        "accept": "Akzeptieren"
+    },
+    "Methodology": {
+        "title": "Unsere Methodik",
+        "subtitle": "Ein bewährter Prozess für konsistenten Erfolg.",
+        "recruiting": {
+            "title": "Recruiting",
+            "description": "Auswahl der besten Talente durch strukturiertes Bewerbungsverfahren."
+        },
+        "training": {
+            "title": "Training",
+            "description": "Intensive Schulung in Produktwissen und Verkaufstechniken."
+        },
+        "deployment": {
+            "title": "Einsatz",
+            "description": "Professioneller Kundenkontakt und Beratung vor Ort."
+        },
+        "optimization": {
+            "title": "Optimierung",
+            "description": "Kontinuierliche Analyse und Verbesserung der Ergebnisse."
         }
     }
 }

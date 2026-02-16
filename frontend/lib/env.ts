@@ -6,7 +6,7 @@
  */
 
 // Backend API URL
-export const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || '';
+export const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
 
 // CRM Configuration
 export const HUBSPOT_ACCESS_TOKEN = process.env.HUBSPOT_ACCESS_TOKEN || '';

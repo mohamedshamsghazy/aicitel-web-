@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 
 export default function Locations() {
     const t = useTranslations('Locations');
+    const tCommon = useTranslations('Common');
 
     return (
         <section className="py-32 bg-secondary-muted relative">
@@ -25,9 +26,9 @@ export default function Locations() {
                             <p>{t('headquarters.zip')}</p>
                             <p className="text-slate-400">{t('headquarters.country')}</p>
                         </div>
-                        <div className="mt-8 pt-6 border-t border-slate-100">
+                        <div className="mt-8 pt-6 border-t border-slate-200">
                             <a href="https://www.google.com/maps/search/?api=1&query=Rauchfußstraße+2b,+06128+Halle+(Saale)" target="_blank" rel="noopener noreferrer" className="text-primary font-bold hover:text-accent transition-colors text-sm flex items-center justify-center gap-2">
-                                <span>Get Directions</span>
+                                <span>{tCommon('getDirections')}</span>
                                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                 </svg>
@@ -36,13 +37,12 @@ export default function Locations() {
                     </div>
 
                     {/* Placeholder for future location - blurred/disabled look */}
-                    <div className="bg-slate-50 p-10 rounded-2xl border border-slate-100 max-w-sm w-full flex flex-col items-center justify-center relative overflow-hidden group">
+                    <div className="bg-slate-50 p-10 rounded-2xl border border-slate-200 max-w-sm w-full flex flex-col items-center justify-center relative overflow-hidden group">
                         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
                         <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 text-primary shadow-sm relative z-10">
                             <span className="text-2xl font-bold">2026</span>
                         </div>
-                        <p className="text-primary font-bold relative z-10">Planned Expansion</p>
-                        <p className="text-slate-500 text-sm mt-2 relative z-10">Munich • Hamburg • Cologne</p>
+                        <p className="text-primary font-bold relative z-10">{tCommon('plannedExpansion')}</p>
                     </div>
                 </div>
 

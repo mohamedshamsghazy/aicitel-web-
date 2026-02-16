@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -16,6 +17,9 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
     return (
         <main className="py-24 bg-white">
             <div className="container mx-auto px-6 max-w-3xl prose prose-slate">
+                <div className="mb-6">
+                    <Breadcrumbs items={[{ label: t('privacyHeading'), href: '/privacy' }]} />
+                </div>
                 <h1 className="text-3xl font-bold text-slate-900 mb-8">{t('privacyHeading')}</h1>
 
                 <h2 className="text-xl font-bold mt-6 mb-4">{t('privacyGeneralTitle')}</h2>
@@ -28,7 +32,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                         Rauchfußstraße 2b<br />
                         06128 Halle (Saale)<br />
                         Deutschland<br />
-                        Datenschutzbeauftragter: info@aicitel.com
+                        Datenschutzbeauftragter: info@aicitel-company.com
                     </p>
                 </div>
 

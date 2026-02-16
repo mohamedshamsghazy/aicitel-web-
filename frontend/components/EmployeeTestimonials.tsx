@@ -34,7 +34,7 @@ export default function EmployeeTestimonials() {
 
                 <div className="space-y-8">
                     {testimonials.map((testimonial, index) => (
-                        <div key={index} className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center text-center gap-6 hover:shadow-md transition-shadow">
+                        <div key={index} className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-slate-200 flex flex-col items-center text-center gap-6 hover:shadow-md transition-shadow">
                             <div className="w-20 h-20 bg-primary/5 rounded-full flex items-center justify-center text-primary">
                                 <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -49,7 +49,7 @@ export default function EmployeeTestimonials() {
                                 <p className="text-lg text-slate-700 italic">"{testimonial.quote}"</p>
                                 <div>
                                     <div className="font-bold text-slate-900">{testimonial.name}</div>
-                                    <div className="text-sm text-slate-500 uppercase tracking-wide">{testimonial.role}</div>
+                                    <div className="text-sm text-slate-600 uppercase tracking-wide">{testimonial.role}</div>
                                 </div>
                             </div>
                         </div>

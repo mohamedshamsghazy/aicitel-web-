@@ -13,7 +13,7 @@ export default function ApplicantFAQ() {
         <section className="py-24 bg-white">
             <div className="container mx-auto px-6 max-w-3xl">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">{t('title')}</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 tracking-tight">{t('title')}</h2>
                 </div>
 
                 <div className="space-y-4">

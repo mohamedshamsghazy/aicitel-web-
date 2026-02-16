@@ -25,7 +25,7 @@ export default function JsonLd() {
                 image: 'https://aicitel.com/og-image.jpg',
                 url: 'https://aicitel.com',
                 telephone: '+4934547009014',
-                email: 'info@aicitel.com',
+                email: 'info@aicitel-company.com',
                 priceRange: '$$$',
                 address: {
                     '@type': 'PostalAddress',

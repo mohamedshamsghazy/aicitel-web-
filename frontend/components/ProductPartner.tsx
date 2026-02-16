@@ -13,23 +13,19 @@ export default function ProductPartner() {
                     {t('headline')}
                 </h2>
 
-                <p className="text-xl text-secondary leading-relaxed">
-                    {t('text')}
-                </p>
+                {t('text') && (
+                    <p className="text-xl text-secondary leading-relaxed">
+                        {t('text')}
+                    </p>
+                )}
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 rtl:text-right">
-                    <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                        <h3 className="font-bold text-lg mb-2">{t('card1Title')}</h3>
-                        <p className="text-slate-500">{t('card1Text')}</p>
-                    </div>
-                    <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                        <h3 className="font-bold text-lg mb-2">{t('card2Title')}</h3>
-                        <p className="text-slate-500">{t('card2Text')}</p>
-                    </div>
-                    <div className="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                        <h3 className="font-bold text-lg mb-2">{t('card3Title')}</h3>
-                        <p className="text-slate-500">{t('card3Text')}</p>
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8 rtl:text-right">
+                    {[1, 2, 3, 4].map((i) => (
+                        <div key={i} className="p-8 bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                            <h3 className="font-bold text-lg mb-3 text-slate-900">{t(`card${i}Title`)}</h3>
+                            <p className="text-slate-600 leading-relaxed text-sm">{t(`card${i}Text`)}</p>
+                        </div>
+                    ))}
                 </div>
 
                 <div className="pt-8">

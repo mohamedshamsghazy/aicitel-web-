@@ -1,9 +1,10 @@
 import { getFAQs, FAQ as FAQType } from '@/lib/api';
-import { getLocale } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import FAQAccordion from './FAQAccordion';
 
 export default async function FAQ() {
     const locale = await getLocale();
+    const t = await getTranslations({ locale, namespace: 'FAQSectionTitle' });
     let faqs: FAQType[] = [];
 
     try {
@@ -15,9 +16,10 @@ export default async function FAQ() {
     return (
         <section id="faq" className="py-24 bg-gray-50">
             <div className="container mx-auto px-6 max-w-3xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Häufig gestellte Fragen</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12 tracking-tight">{t('title')}</h2>
                 <FAQAccordion items={faqs || []} />
             </div>
         </section>
     );
 }
+

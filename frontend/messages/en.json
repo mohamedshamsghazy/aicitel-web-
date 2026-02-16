@@ -9,9 +9,9 @@
         "applyNow": "Apply Now"
     },
     "Hero": {
-        "headlineHighlight": "Scalable Sales",
-        "headline": "Germany's Premium Infrastructure for Direct Sales",
-        "subline": "We scale sales organizations for energy and telecommunication leaders. Compliant. Data-driven. Certified.",
+        "headlineHighlight": "Sales Infrastructure",
+        "headline": "Scalable Direct Sales for Energy & Telecom",
+        "subline": "We build compliant, high-performance sales organizations. From Halle (Saale) to nationwide impact.",
         "ctaProject": "For Companies: Scale Revenue",
         "ctaJoin": "For Talent: Start Career",
         "badgeTopCompany": "Compliance",
@@ -22,7 +22,12 @@
         "badgeMember": "Certified"
     },
     "TrustSection": {
-        "subtitle": "BUILT FOR REGULATED INDUSTRIES"
+        "subtitle": "BUILT FOR REGULATED INDUSTRIES",
+        "sectors": {
+            "energy": "Energy",
+            "telecom": "Telecommunication",
+            "infrastructure": "Infrastructure"
+        }
     },
     "Mission": {
         "headline": "Our Standard",
@@ -44,10 +49,10 @@
         "imageLeadershipLabel": "Leadership Team",
         "imageLeadershipHeadline": "Experience Meets Innovation",
         "headline": "Structured Sales Operations",
-        "text": "Headquartered in <bold>Halle (Saale)</bold>, Aicitel is a strategic growth partner for DAX-listed companies and market challengers. We combine local focus with national ambition.",
+        "text": "Headquartered in <bold>Halle (Saale)</bold>, Aicitel is a strategic growth partner for energy providers. We combine local expertise with standardized processes to deliver consistent results.",
         "statEmployees": "Sales Professionals",
-        "statLocations": "Regional Hubs",
-        "statCustomers": "New Customers",
+        "statLocations": "Central Hub",
+        "statCustomers": "Customer Acquisition",
         "cta": "View Corporate Profile"
     },
     "CareerOpportunities": {
@@ -113,7 +118,30 @@
         "card2Text": "Compliance-first approach ensuring your brand is represented perfectly.",
         "card3Title": "Cost Efficiency",
         "card3Text": "Variable cost model. You pay for results, not just hours.",
+        "card4Title": "Long-term Security",
+        "card4Text": "Strategic planning for sustainable growth and stability.",
         "cta": "Request Sales Audit"
+    },
+    "Services": {
+        "hero": {
+            "highlight": "Global Impact.",
+            "title": "Precision Engineering.",
+            "subtitle": "Our comprehensive suite of services is designed to elevate enterprises to the forefront of innovation."
+        },
+        "items": {
+            "infrastructure": {
+                "title": "AI Infrastructure",
+                "description": "Enterprise-grade GPU orchestration and scalable model deployment for high-performance computing."
+            },
+            "consulting": {
+                "title": "Strategic Consulting",
+                "description": "Data-driven roadmaps to integrate artificial intelligence into your core business processes."
+            },
+            "development": {
+                "title": "Custom Solutions",
+                "description": "Tailored software development that solves complex operational challenges with precision."
+            }
+        }
     },
     "Contact": {
         "label": "Contact Us",
@@ -192,7 +220,10 @@
             "title": "Managing Cookies",
             "text": "You can control and manage cookies through your browser settings. Please note that removing or blocking cookies may impact your user experience."
         },
-        "lastUpdated": "Last Updated"
+        "lastUpdated": "Last Updated",
+        "settings": "Privacy Settings:",
+        "details": "Full details in our",
+        "policyLink": "Privacy Policy"
     },
     "Solutions": {
         "title": "Our Solutions",
@@ -223,53 +254,53 @@
             "tag": "Energy"
         },
         "case2": {
-            "title": "Telecom Rollout",
-            "metric": "Regional",
-            "desc": "Fiber Infrastructure Expansion",
+            "title": "Telecom Sales",
+            "metric": "Specialized",
+            "desc": "Direct Sales Framework",
             "tag": "Telecom"
         },
         "case3": {
-            "title": "Market Entry",
-            "metric": "Rapid",
-            "desc": "Time-to-Market Deployment",
+            "title": "Infrastructure",
+            "metric": "Strategic",
+            "desc": "Sales Process Optimization",
             "tag": "Infra"
         }
     },
     "Testimonials": {
         "title": "Partners & People",
         "employees": {
-            "tab": "Our Team",
+            "tab": "Our Principles",
             "item1": {
                 "quote": "Aicitel creates winners. If you are willing to work hard, there is no ceiling.",
-                "name": "Thomas K.",
-                "role": "Sales Manager"
+                "name": "Standardized Onboarding",
+                "role": "Academy"
             },
             "item2": {
                 "quote": "Structured, professional, fairness. Everything I missed elsewhere.",
-                "name": "Julia M.",
-                "role": "Team Leader"
+                "name": "Clear Career Path",
+                "role": "Growth"
             },
             "item3": {
                 "quote": "The best sales school in the country. Period.",
-                "name": "Lukas B.",
-                "role": "Sales Rep"
+                "name": "Meritocracy",
+                "role": "Culture"
             }
         },
         "partners": {
             "tab": "Corporate Partners",
             "item1": {
                 "quote": "Aicitel lowered our CAC by 40% while delivering higher retention rates than our internal teams.",
-                "name": "Leading Energy Provider",
-                "role": "VP Sales"
+                "name": "Energy Provider",
+                "role": "Sales Director"
             },
             "item2": {
-                "quote": "They enabled us to launch in 3 new states simultaneously.",
-                "name": "National Telecom Operator",
+                "quote": "They enabled us to launch in new regions effectively.",
+                "name": "Telecom Operator",
                 "role": "CEO"
             },
             "item3": {
                 "quote": "Compliance was our biggest concern. Aicitel's standards are higher than our own.",
-                "name": "Sustainable Tech Firm",
+                "name": "Tech Firm",
                 "role": "COO"
             }
         }
@@ -311,9 +342,9 @@
     },
     "KPI": {
         "experience": "Sales Excellence",
-        "agents": "Active Consultants",
+        "agents": "Onboarding",
         "applications": "Talent Pipeline",
-        "partners": "Corporate Partners"
+        "partners": "Partnerships"
     },
     "Compliance": {
         "title": "Compliance & Ethics",
@@ -333,9 +364,10 @@
     },
     "EmptyStates": {
         "faq": {
-            "title": "No questions found",
-            "description": "Please check back later or contact support.",
-            "cta": "Contact Support"
+            "title": "No FAQs Yet",
+            "description": "We are currently compiling the most frequently asked questions. Please check back soon.",
+            "cta": "Contact Support",
+            "noAnswer": "Answer coming soon."
         },
         "career": {
             "title": "No current openings",
@@ -360,7 +392,7 @@
             "zip": "06128",
             "country": "Germany"
         },
-        "expansionNote": "Headquartered in Halle (Saale). Strategic expansion planned."
+        "expansionNote": "Headquartered in Halle (Saale). Ready for strategic expansion."
     },
     "CareerRoadmap": {
         "title": "Your Path to Leadership",
@@ -440,6 +472,12 @@
             "sending": "Sending...",
             "submitApplicant": "Submit Application",
             "submitPartner": "Request Partnership"
+        },
+        "contactLabels": {
+            "visitUs": "Visit Us",
+            "emailUs": "Email Us",
+            "callUs": "Call Us",
+            "address": "Rauchfußstraße 2b<br />06128 Halle (Saale)"
         }
     },
     "PartnerSection": {
@@ -495,7 +533,14 @@
         "metaDescription": "Scale your revenue with our direct sales force."
     },
     "PageTitles": {
-        "partner": "Partner with Us"
+        "partner": "Partner with Us",
+        "services": "Our Services"
+    },
+    "NotFound": {
+        "title": "Page Not Found",
+        "description": "The page you are looking for does not exist or has been moved.",
+        "ctaHome": "Back to Home",
+        "ctaHelp": "Contact Support"
     },
     "ApplicantFAQ": {
         "title": "Frequently Asked Questions",
@@ -513,6 +558,43 @@
     "AboutPage": {
         "metaTitle": "About Aicitel - Performance & Integrity",
         "metaDescription": "Learn more about Germany's premier direct sales agency."
+    },
+    "DataSales": {
+        "title": "Data-Driven Sales",
+        "description": "We leave nothing to chance. Through our proprietary performance tracking system, we analyze KPIs in real-time, optimize sales territories, and continuously increase our teams' closing rates."
+    },
+    "System": {
+        "title": "Our System",
+        "steps": {
+            "recruiting": {
+                "title": "Recruiting",
+                "description": "Selection of the best talent through structured application process."
+            },
+            "training": {
+                "title": "Training",
+                "description": "Intensive training in product knowledge and sales techniques."
+            },
+            "deployment": {
+                "title": "Deployment",
+                "description": "Professional customer contact and on-site consultation."
+            },
+            "optimization": {
+                "title": "Optimization",
+                "description": "Continuous analysis and improvement of results."
+            }
+        }
+    },
+    "Common": {
+        "getDirections": "Get Directions",
+        "plannedExpansion": "Planned Expansion",
+        "globalImpact": "Global Impact."
+    },
+    "PartnerInvite": {
+        "title": "Grow together.",
+        "subtitle": "Join our network of market leaders."
+    },
+    "FAQSectionTitle": {
+        "title": "Frequently Asked Questions"
     },
     "ContactNew": {
         "hero": {
@@ -552,7 +634,49 @@
             "cv": "Resume (PDF)",
             "submitBusiness": "Request Audit",
             "submitCareer": "Submit Application",
-            "privacy": "Your data is secure and treated with strict confidentiality."
+            "privacy": "Your data is secure and treated with strict confidentiality.",
+            "liveSupport": "Live Support",
+            "emailLabel": "Email:",
+            "phoneLabel": "Phone:",
+            "features": {
+                "confidentiality": "Full confidentiality guaranteed.",
+                "priority": "Priority support channel.",
+                "kpis": "Tailored to your KPIs.",
+                "certification": "Full certification included.",
+                "paycheck": "Write your own paycheck.",
+                "merit": "Merit-based promotion."
+            }
+        }
+    },
+    "ServicesPage": {
+        "metaTitle": "Our Services - Aicitel",
+        "metaDescription": "Explore our comprehensive sales solutions."
+    },
+    "CookieConsent": {
+        "settings": "Cookie Settings.",
+        "details": "We use cookies to improve your experience. Read our ",
+        "policyLink": "Privacy Policy",
+        "decline": "Decline",
+        "accept": "Accept"
+    },
+    "Methodology": {
+        "title": "Our Methodology",
+        "subtitle": "A proven process for consistent success.",
+        "recruiting": {
+            "title": "Recruiting",
+            "description": "Selection of the best talent through structured application process."
+        },
+        "training": {
+            "title": "Training",
+            "description": "Intensive training in product knowledge and sales techniques."
+        },
+        "deployment": {
+            "title": "Deployment",
+            "description": "Professional customer contact and on-site consultation."
+        },
+        "optimization": {
+            "title": "Optimization",
+            "description": "Continuous analysis and improvement of results."
         }
     }
 }

@@ -8,7 +8,7 @@ export default function EmployeeSuccess() {
             <div className="container mx-auto flex flex-col items-center text-center space-y-12">
 
                 <div className="max-w-3xl space-y-6">
-                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900">
+                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
                         {t('headline')}
                         <div className="h-1 w-24 bg-primary mx-auto mt-6 rounded-full"></div>
                     </h2>

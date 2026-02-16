@@ -2,31 +2,29 @@ import { fetchAPI } from './strapi';
 
 export interface Job {
     id: number;
-    attributes: {
-        title: string;
-        slug: string;
-        description: any; // Block content
-        location: string;
-        highlight: boolean;
-        featuredOrder: number;
-        status: 'Open' | 'Closed' | 'Archived';
-        closingDate: string | null;
-        metaTitle?: string;
-        metaDescription?: string;
-        locale: string;
-        updatedAt: string;
-        localizations?: { data: Job[] };
-    };
+    documentId: string;
+    title: string;
+    slug: string;
+    description: any; // Block content
+    location: string;
+    highlight: boolean;
+    featuredOrder: number;
+    jobStatus: 'Open' | 'Closed' | 'Archived';
+    closingDate: string | null;
+    metaTitle?: string;
+    metaDescription?: string;
+    locale: string;
+    updatedAt: string;
+    localizations?: { data: Job[] };
 }
 
 export interface FAQ {
     id: number;
-    attributes: {
-        question: string;
-        answer: any;
-        category: 'Career' | 'Partner';
-        order: number;
-    };
+    documentId: string;
+    question: string;
+    answer: any;
+    category: 'Career' | 'Partner';
+    order: number;
 }
 
 export async function getJobs(locale: string) {
@@ -34,7 +32,7 @@ export async function getJobs(locale: string) {
         const data = await fetchAPI('/jobs', {
             locale,
             filters: {
-                status: { $eq: 'Open' },
+                jobStatus: { $eq: 'Open' },
             },
             populate: '*',
             sort: ['featuredOrder:asc', 'publishedAt:desc'],
@@ -51,7 +49,7 @@ export async function getHighlightedJobs(locale: string) {
         const data = await fetchAPI('/jobs', {
             locale,
             filters: {
-                status: { $eq: 'Open' },
+                jobStatus: { $eq: 'Open' },
                 highlight: { $eq: true },
             },
             populate: '*',
@@ -95,7 +93,10 @@ export async function getFAQs(locale: string) {
             sort: ['order:asc'],
             populate: '*',
         });
-        return data.data as FAQ[];
+        return data.data.map((item: any) => ({
+            id: item.id,
+            ...item.attributes
+        })) as FAQ[];
     } catch (error) {
         console.warn(`[getFAQs] Failed to fetch FAQs for locale ${locale}:`, error);
         return [];

@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
 
     try {
         // 1. Rate Limiting
-        ip = req.headers.get('x-forwarded-for') || 'anonymous';
+        ip = req.headers.get('x-forwarded-for') || (req as any).ip || '127.0.0.1';
         try {
             await limiter.check(5, ip);
         } catch {
@@ -55,9 +55,13 @@ export async function POST(req: NextRequest) {
         const { fullName, email, phone, notes, token } = validationResult.data;
 
         // 3. Bot Protection (Turnstile)
-        const isHuman = await validateTurnstileToken(token, ip);
-        if (!isHuman) {
-            return NextResponse.json({ error: 'Security check failed. Please refresh and try again.' }, { status: 400 });
+        // 3. Bot Protection (Turnstile)
+        // Skip on localhost/dev if needed
+        if (process.env.NODE_ENV === 'production' || (process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !ip.includes('127.0.0.1') && ip !== '::1')) {
+            const isHuman = await validateTurnstileToken(token, ip);
+            if (!isHuman) {
+                return NextResponse.json({ error: 'Security check failed. Please refresh and try again.' }, { status: 400 });
+            }
         }
 
         const cvFile = incomingFormData.get('cv');
@@ -111,35 +115,52 @@ export async function POST(req: NextRequest) {
 
         strapiFormData.append('data', JSON.stringify(dataPayload));
 
-        if (cvFile && cvFile instanceof Blob) {
-            strapiFormData.append('files.cv', cvFile, (cvFile as any).name || 'cv.pdf');
-        }
-
-        const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL;
+        // Use imports from lib/env or process.env with fallback
+        const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
         const STRAPI_TOKEN = process.env.STRAPI_API_TOKEN;
 
-        if (!STRAPI_URL) {
-            Logger.critical('API: NEXT_PUBLIC_STRAPI_URL is not set.');
-            return NextResponse.json({ error: 'Backend not configured' }, { status: 503 });
+        // Note: STRAPI_TOKEN is optional if Public permissions are enabled
+        const headers: Record<string, string> = {};
+        if (STRAPI_TOKEN) {
+            headers['Authorization'] = `Bearer ${STRAPI_TOKEN}`;
         }
 
-        if (!STRAPI_TOKEN) {
-            Logger.critical('API: STRAPI_API_TOKEN is not set.');
-            return NextResponse.json({ error: 'Internal Server Configuration Error' }, { status: 500 });
-        }
+        let strapiResponse;
 
-        const strapiResponse = await fetch(`${STRAPI_URL}/api/applications`, {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${STRAPI_TOKEN}`,
-            },
-            body: strapiFormData,
-        });
+        // If file exists, use FormData
+        if (cvFile && cvFile instanceof Blob) {
+            const strapiFormData = new FormData();
+
+            // Append data as Blob with explicit type for Strapi v5/Node compat
+            const jsonBlob = new Blob([JSON.stringify(dataPayload)], { type: 'application/json' });
+            strapiFormData.append('data', jsonBlob);
+
+            strapiFormData.append('files.cv', cvFile, (cvFile as any).name || 'cv.pdf');
+
+            strapiResponse = await fetch(`${STRAPI_URL}/api/applications`, {
+                method: 'POST',
+                headers,
+                body: strapiFormData,
+            });
+        } else {
+            // No file -> Use JSON (more reliable)
+            headers['Content-Type'] = 'application/json';
+            const jsonPayload = {
+                data: dataPayload
+            };
+
+            strapiResponse = await fetch(`${STRAPI_URL}/api/applications`, {
+                method: 'POST',
+                headers,
+                body: JSON.stringify(jsonPayload),
+            });
+        }
 
         const data = await strapiResponse.json();
 
         if (!strapiResponse.ok) {
             Logger.error('API: Strapi submission failed', data);
+            // Revert details exposure for security, but keep error message
             return NextResponse.json({ error: 'Submission failed. Please try again later.' }, { status: strapiResponse.status });
         }
 

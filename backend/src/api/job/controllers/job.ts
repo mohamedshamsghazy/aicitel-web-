@@ -14,7 +14,7 @@ export default factories.createCoreController('api::job.job', ({ strapi }) => ({
 
         const filters = {
             ...(query.filters as object || {}),
-            status: 'Open',
+            jobStatus: 'Open',
             $or: [
                 { closingDate: { $null: true } },
                 { closingDate: { $gte: today } },
@@ -46,7 +46,7 @@ export default factories.createCoreController('api::job.job', ({ strapi }) => ({
         }
 
         // Check Logic
-        const isOpen = entity.status === 'Open';
+        const isOpen = entity.jobStatus === 'Open';
         const isNotExpired = !entity.closingDate || entity.closingDate >= today;
 
         if (!isOpen || !isNotExpired) {

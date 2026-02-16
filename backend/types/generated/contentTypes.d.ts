@@ -581,6 +581,7 @@ export interface ApiJobJob extends Struct.CollectionTypeSchema {
       }>;
     featuredOrder: Schema.Attribute.Integer;
     highlight: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    jobStatus: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Open'>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::job.job'>;
     location: Schema.Attribute.String & Schema.Attribute.Required;
@@ -604,7 +605,6 @@ export interface ApiJobJob extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    status: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Open'>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{

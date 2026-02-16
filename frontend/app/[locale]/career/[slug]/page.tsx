@@ -1,4 +1,5 @@
 import { getJobBySlug } from '@/lib/api';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { notFound } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
@@ -46,8 +47,8 @@ export async function generateMetadata({ params }: Props) {
     }
 
     return {
-        title: `${job.attributes.title} - Aicitel Career`,
-        description: job.attributes.metaDescription || `Join Aicitel as a ${job.attributes.title} in ${job.attributes.location}`,
+        title: `${job.title} - Aicitel Career`,
+        description: job.metaDescription || `Join Aicitel as a ${job.title} in ${job.location}`,
     };
 }
 
@@ -61,7 +62,7 @@ export default async function JobPage({ params }: Props) {
 
     // Force date check just in case backend filter missed it or cache is stale
     const today = new Date().toISOString().split('T')[0];
-    if (job.attributes.closingDate && job.attributes.closingDate < today) {
+    if (job.closingDate && job.closingDate < today) {
         // Option: Show expired message or 404
         // return notFound();
     }
@@ -69,15 +70,15 @@ export default async function JobPage({ params }: Props) {
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'JobPosting',
-        title: job.attributes.title,
-        description: JSON.stringify(job.attributes.description), // Basic stringify for blocks, ideally convert to safe HTML/Text
+        title: job.title,
+        description: JSON.stringify(job.description), // Basic stringify for blocks, ideally convert to safe HTML/Text
         identifier: {
             '@type': 'PropertyValue',
             name: 'Aicitel',
             value: job.id,
         },
-        datePosted: job.attributes.updatedAt,
-        validThrough: job.attributes.closingDate,
+        datePosted: job.updatedAt,
+        validThrough: job.closingDate,
         employmentType: 'FULL_TIME',
         hiringOrganization: {
             '@type': 'Organization',
@@ -89,7 +90,7 @@ export default async function JobPage({ params }: Props) {
             '@type': 'Place',
             address: {
                 '@type': 'PostalAddress',
-                addressLocality: job.attributes.location || 'Halle (Saale)',
+                addressLocality: job.location || 'Halle (Saale)',
                 addressCountry: 'DE',
             },
         },
@@ -113,14 +114,20 @@ export default async function JobPage({ params }: Props) {
             {/* Header */}
             <div className="bg-primary text-white py-20">
                 <div className="container mx-auto px-6">
-                    <Link href="/career" className="text-white/60 hover:text-white mb-6 inline-block transition-colors">
-                        ← Zurück zur Übersicht
-                    </Link>
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">{job.attributes.title}</h1>
+                    <div className="mb-6">
+                        <Breadcrumbs
+                            theme="light"
+                            items={[
+                                { label: 'Career', href: '/career' },
+                                { label: job.title, href: '#' }
+                            ]}
+                        />
+                    </div>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4">{job.title}</h1>
                     <div className="flex flex-wrap gap-4 text-white/80">
                         <span className="flex items-center gap-2">
                             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                            {job.attributes.location}
+                            {job.location}
                         </span>
                         <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-medium">
                             Vollzeit / Teilzeit
@@ -134,8 +141,8 @@ export default async function JobPage({ params }: Props) {
                     {/* Content */}
                     <div className="lg:w-2/3 bg-white rounded-xl shadow-sm p-8 md:p-12 prose prose-lg max-w-none prose-headings:text-primary prose-a:text-blue-600">
                         {/* Rich Text Renderer */}
-                        {job.attributes.description ? (
-                            <BlocksRenderer content={job.attributes.description} />
+                        {job.description ? (
+                            <BlocksRenderer content={job.description} />
                         ) : (
                             <p>No description available.</p>
                         )}

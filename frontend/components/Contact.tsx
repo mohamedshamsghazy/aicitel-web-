@@ -11,7 +11,7 @@ export default function Contact() {
             <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-16 space-y-4">
                     <span className="text-primary font-bold tracking-widest uppercase text-sm">{t('label')}</span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-slate-900">{t('headline')}</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">{t('headline')}</h2>
                 </div>
 
                 <div className="mt-12">

@@ -48,7 +48,7 @@ export default function Footer() {
                             aicitel<span className="text-slate-400 font-light">.company</span>
                         </Link>
 
-                        <p className="text-slate-500 text-sm leading-relaxed">
+                        <p className="text-slate-600 text-sm leading-relaxed">
                             {t('logoSubtitle')}
                         </p>
 
@@ -98,7 +98,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-4 h-4 text-slate-400 shrink-0" />
-                                <a href="mailto:info@aicitel.com" className="hover:text-primary">info@aicitel.com</a>
+                                <a href="mailto:info@aicitel-company.com" className="hover:text-primary">info@aicitel-company.com</a>
                             </li>
                         </ul>
 
@@ -109,7 +109,7 @@ export default function Footer() {
                                     href={social.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-8 h-8 flex items-center justify-center rounded-sm bg-slate-100 text-slate-500 hover:bg-primary hover:text-white transition-all"
+                                    className="w-8 h-8 flex items-center justify-center rounded-sm bg-slate-100 text-slate-600 hover:bg-primary hover:text-white transition-all"
                                 >
                                     <social.icon size={16} />
                                 </a>
@@ -119,7 +119,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
                     <p>&copy; {new Date().getFullYear()} Aicitel Company GmbH. {t('rights')}</p>
                     <div className="flex gap-6">
                         <Link href="/impressum" className="hover:text-primary transition-colors">{t('imprint')}</Link>

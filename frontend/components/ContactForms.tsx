@@ -101,8 +101,8 @@ export default function ContactForms({ defaultTab = 'applicants' }: ContactForms
                                 <span className="text-lg">📍</span>
                             </div>
                             <div>
-                                <h4 className="font-bold text-white/90 text-sm uppercase tracking-wide mb-1">Visit Us</h4>
-                                <p className="text-slate-300 leading-relaxed">Rauchfußstraße 2b<br />06128 Halle (Saale)</p>
+                                <h4 className="font-bold text-white/90 text-sm uppercase tracking-wide mb-1">{t('contactLabels.visitUs')}</h4>
+                                <p className="text-slate-300 leading-relaxed" dangerouslySetInnerHTML={{ __html: t('contactLabels.address') }} />
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
@@ -110,8 +110,8 @@ export default function ContactForms({ defaultTab = 'applicants' }: ContactForms
                                 <span className="text-lg">📧</span>
                             </div>
                             <div>
-                                <h4 className="font-bold text-white/90 text-sm uppercase tracking-wide mb-1">Email Us</h4>
-                                <p className="text-slate-300">info@aicitel.com</p>
+                                <h4 className="font-bold text-white/90 text-sm uppercase tracking-wide mb-1">{t('contactLabels.emailUs')}</h4>
+                                <a href="mailto:info@aicitel-company.com" className="text-white hover:underline">info@aicitel-company.com</a>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
@@ -119,7 +119,7 @@ export default function ContactForms({ defaultTab = 'applicants' }: ContactForms
                                 <span className="text-lg">📞</span>
                             </div>
                             <div>
-                                <h4 className="font-bold text-white/90 text-sm uppercase tracking-wide mb-1">Call Us</h4>
+                                <h4 className="font-bold text-white/90 text-sm uppercase tracking-wide mb-1">{t('contactLabels.callUs')}</h4>
                                 <p className="text-slate-300">0345 4700 9014</p>
                             </div>
                         </div>

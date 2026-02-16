@@ -42,7 +42,7 @@ export default function Testimonials() {
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {[1, 2, 3].map((i) => (
+                    {(activeTab === 'partners' ? [1] : [1, 2, 3]).map((i) => (
                         <div key={i} className="bg-slate-800 p-10 rounded-2xl relative group border border-slate-700 hover:border-primary/50 transition-colors">
                             <div className="absolute top-8 right-8 text-primary/20 text-8xl font-serif leading-none select-none group-hover:text-primary/40 transition-colors">
                                 &ldquo;
@@ -51,7 +51,6 @@ export default function Testimonials() {
                                 {t(`${activeTab}.item${i}.quote`)}
                             </p>
                             <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-600 rounded-full flex-shrink-0 border border-slate-600"></div>
                                 <div>
                                     <h4 className="font-bold text-white">{t(`${activeTab}.item${i}.name`)}</h4>
                                     <p className="text-xs text-primary font-bold uppercase tracking-wide">

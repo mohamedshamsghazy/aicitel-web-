@@ -64,69 +64,30 @@ export default function UberUns() {
     return (
         <section id="uber-uns" className="py-24 px-4 bg-white">
             <div className="container mx-auto max-w-7xl">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="max-w-4xl mx-auto text-center">
                     {/* Text Content */}
-                    <div className="space-y-8 text-left rtl:text-right">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8">
+                    <div className="space-y-8">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8 mx-auto">
                             <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
                             <span className="text-sm font-bold text-primary tracking-widest uppercase">{t('subtitle')}</span>
-                        </div>         <h2 className="text-4xl md:text-5xl font-bold text-slate-900">
+                        </div>
+                        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">
                             {t('headline')}
                         </h2>
 
-                        <p className="text-xl text-secondary leading-relaxed">
+                        <p className="text-xl text-secondary leading-relaxed max-w-2xl mx-auto">
                             {t.rich('text', {
                                 bold: (chunks) => <span className="text-slate-900 font-semibold">{chunks}</span>
                             })}
                         </p>
 
-                        <div className="grid grid-cols-3 gap-4">
-                            <div className="text-center md:text-left rtl:text-right">
-                                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
-                                    Experts
-                                </div>
-                                <div className="text-xs md:text-sm text-slate-500 uppercase tracking-wide">{t('statEmployees')}</div>
-                            </div>
-                            <div className="text-center md:text-left rtl:text-right">
-                                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
-                                    Germany
-                                </div>
-                                <div className="text-xs md:text-sm text-slate-500 uppercase tracking-wide">{t('statLocations')}</div>
-                            </div>
-                            <div className="text-center md:text-left rtl:text-right">
-                                <div className="text-xl md:text-2xl font-bold text-primary mb-2">
-                                    Scalable
-                                </div>
-                                <div className="text-xs md:text-sm text-slate-500 uppercase tracking-wide">{t('statCustomers')}</div>
-                            </div>
-                        </div>
-
-                        <div className="pt-4">
+                        <div className="pt-4 flex justify-center">
                             <Link
                                 href="/contact"
                                 className="inline-block px-10 py-4 bg-primary text-white rounded-full font-bold text-lg hover:bg-primary-hover hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-primary/25"
                             >
                                 {t('cta')}
                             </Link>
-                        </div>
-                    </div>
-
-                    {/* Image Grid - Right Side */}
-                    <div className="relative order-1 md:order-2 h-[400px] md:h-[600px] w-full">
-                        {/* Main Image */}
-                        <div className="absolute top-0 right-0 w-4/5 h-4/5 rounded-3xl overflow-hidden shadow-2xl z-10">
-                            <Image
-                                src="/images/team-photo-final.png" // Ensure this image is in public/images
-                                alt="Aicitel Team"
-                                fill
-                                className="object-cover hover:scale-105 transition-transform duration-700"
-                                sizes="(max-width: 768px) 100vw, 50vw"
-                                priority
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                        </div>        <div className="absolute bottom-8 left-8 z-20 text-white rtl:right-8 rtl:left-auto">
-                            <div className="text-sm font-bold uppercase tracking-widest text-primary mb-2">{t('imageLeadershipLabel')}</div>
-                            <div className="text-2xl font-bold">{t('imageLeadershipHeadline')}</div>
                         </div>
                     </div>
                 </div>

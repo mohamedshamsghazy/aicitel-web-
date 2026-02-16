@@ -28,9 +28,9 @@ export async function POST(req: NextRequest) {
 
     try {
         // 1. Rate Limiting
-        ip = req.headers.get('x-forwarded-for') || 'anonymous';
+        ip = req.headers.get('x-forwarded-for') || (req as any).ip || '127.0.0.1';
         try {
-            await limiter.check(10, ip);
+            await limiter.check(5, ip);
         } catch {
             Logger.warn(`API: Rate limit exceeded for IP ${ip} on /api/inquiry`);
             return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 });
@@ -48,9 +48,12 @@ export async function POST(req: NextRequest) {
         const validData = validationResult.data;
 
         // 3. Bot Protection
-        const isHuman = await validateTurnstileToken(validData.token, ip);
-        if (!isHuman) {
-            return NextResponse.json({ error: 'Security check failed. Please refresh and try again.' }, { status: 400 });
+        // Skip on localhost/dev if needed
+        if (process.env.NODE_ENV === 'production' || (process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !ip.includes('127.0.0.1') && ip !== '::1')) {
+            const isHuman = await validateTurnstileToken(validData.token, ip);
+            if (!isHuman) {
+                return NextResponse.json({ error: 'Security check failed. Please refresh and try again.' }, { status: 400 });
+            }
         }
 
         // 4. CRM Integration
@@ -69,17 +72,16 @@ export async function POST(req: NextRequest) {
         }
 
         // 5. Strapi Submission
-        const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL;
+        const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
         const STRAPI_TOKEN = process.env.STRAPI_API_TOKEN;
 
-        if (!STRAPI_URL) {
-            Logger.critical('API: NEXT_PUBLIC_STRAPI_URL is not set.');
-            return NextResponse.json({ error: 'Backend not configured' }, { status: 503 });
-        }
+        // Note: STRAPI_TOKEN is optional if Public permissions are enabled
+        const headers: Record<string, string> = {
+            'Content-Type': 'application/json',
+        };
 
-        if (!STRAPI_TOKEN) {
-            Logger.critical('API: STRAPI_API_TOKEN is not set.');
-            return NextResponse.json({ error: 'Internal Server Configuration Error' }, { status: 500 });
+        if (STRAPI_TOKEN) {
+            headers['Authorization'] = `Bearer ${STRAPI_TOKEN}`;
         }
 
         const payload = {
@@ -93,10 +95,7 @@ export async function POST(req: NextRequest) {
 
         const strapiResponse = await fetch(`${STRAPI_URL}/api/inquiries`, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${STRAPI_TOKEN}`,
-            },
+            headers,
             body: JSON.stringify(payload),
         });
 

@@ -58,15 +58,15 @@ export default async function LocaleLayout({
     const dir = locale === 'ar' ? 'rtl' : 'ltr';
 
     return (
-        <html lang={locale} dir={dir} className="scroll-smooth">
-            <body className={`${inter.variable} font-sans bg-white text-gray-900 antialiased`}>
+        <html lang={locale} dir={dir} className="scroll-smooth" suppressHydrationWarning>
+            <body className={`${inter.variable} font-sans bg-white text-gray-900 antialiased`} suppressHydrationWarning>
                 <JsonLd />
                 <NextIntlClientProvider messages={messages}>
                     <StickyHeader />
                     <main className="pt-20">
                         {children}
                     </main>
-                    <FloatingLanguageSelector />
+                    {/* FloatingLanguageSelector removed */}
                     <MobileStickyCTA />
                     <CookieConsent />
                     <Footer />

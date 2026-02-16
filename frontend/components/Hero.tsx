@@ -31,37 +31,21 @@ export default function Hero() {
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 rtl:justify-start">
                             <Link
-                                href="/partner"
+                                href="/career"
                                 className="px-8 py-4 bg-primary text-white text-lg font-bold rounded-full hover:bg-primary-light transition-all transform hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/30 shadow-md"
                             >
-                                {t('ctaProject')}
+                                {t('ctaJoin')}
                             </Link>
                             <Link
-                                href="/career"
+                                href="/partner"
                                 className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg text-center hover:bg-white hover:text-primary hover:-translate-y-1 transition-all duration-300"
                             >
-                                {t('ctaJoin')}
+                                {t('ctaProject')}
                             </Link>
                         </div>
                     </ScrollReveal>
 
-                    {/* Trust Badges */}
-                    <ScrollReveal delay={0.2}>
-                        <div className="pt-12 flex flex-wrap gap-6 items-center border-t border-white/20 mt-8 rtl:justify-start">
-                            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-5 py-3 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
-                                <svg className="w-8 h-8 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                                <div className="text-xs font-bold uppercase leading-tight text-white/90 rtl:text-right">{t('badgeTopCompany')}<br /><span className="text-blue-200">{t('badgeYear')}</span></div>
-                            </div>
-                            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-5 py-3 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
-                                <svg className="w-8 h-8 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                                <div className="text-xs font-bold uppercase leading-tight text-white/90 rtl:text-right">{t('badgeTrusted')}<br /><span className="text-blue-200">{t('badgePartner')}</span></div>
-                            </div>
-                            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-5 py-3 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
-                                <svg className="w-8 h-8 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
-                                <div className="text-xs font-bold uppercase leading-tight text-white/90 rtl:text-right">{t('badgeIndustry')}<br /><span className="text-blue-200">{t('badgeMember')}</span></div>
-                            </div>
-                        </div>
-                    </ScrollReveal>
+
                 </div>
             </div>
 

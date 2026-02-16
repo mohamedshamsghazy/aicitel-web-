@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -16,6 +17,9 @@ export default async function ImpressumPage({ params }: { params: Promise<{ loca
     return (
         <main className="py-24 bg-white">
             <div className="container mx-auto px-6 max-w-3xl prose prose-slate">
+                <div className="mb-6">
+                    <Breadcrumbs items={[{ label: t('impressumHeading'), href: '/impressum' }]} />
+                </div>
                 <h1 className="text-3xl font-bold text-slate-900 mb-8">{t('impressumHeading')}</h1>
 
                 <h2 className="text-xl font-semibold mb-2">{t('tmg')}</h2>
@@ -37,7 +41,7 @@ export default async function ImpressumPage({ params }: { params: Promise<{ loca
                         <h3 className="font-semibold text-slate-900 mb-2">{t('contact')}</h3>
                         <p className="text-slate-600">
                             Telefon: 0345 4700 9014<br />
-                            E-Mail: info@aicitel.com
+                            E-Mail: info@aicitel-company.com
                         </p>
                     </div>
                 </div>

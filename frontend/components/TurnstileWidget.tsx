@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function TurnstileWidget({ onVerify, onError }: Props) {
-    const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'; // Test Key
+    const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000BB'; // Test Key (Invisible)
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {

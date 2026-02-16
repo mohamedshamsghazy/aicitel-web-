@@ -50,10 +50,10 @@ export default function ContactSegmentedForm() {
     return (
         <section className="bg-white py-0 -mt-8 relative z-10 mb-20">
             <div className="container mx-auto px-6">
-                <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-xl border border-slate-100 overflow-hidden flex flex-col lg:flex-row">
+                <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-xl border border-slate-200 overflow-hidden flex flex-col lg:flex-row">
 
                     {/* Left Column: Form */}
-                    <div className="flex-1 p-8 md:p-12 lg:border-r border-slate-100">
+                    <div className="flex-1 p-8 md:p-12 lg:border-r border-slate-200">
                         {/* Custom Tabs */}
                         <div className="flex p-1 bg-slate-50 rounded-lg mb-10">
                             <button
@@ -77,10 +77,10 @@ export default function ContactSegmentedForm() {
                         </div>
 
                         <div className="mb-8">
-                            <h2 className="text-2xl font-bold text-slate-900 mb-2">
+                            <h2 className="text-2xl font-bold text-slate-900 mb-2 tracking-tight">
                                 {activeTab === 'business' ? t('business.title') : t('career.title')}
                             </h2>
-                            <p className="text-slate-500">
+                            <p className="text-slate-600">
                                 {activeTab === 'business' ? t('business.description') : t('career.description')}
                             </p>
                         </div>
@@ -88,35 +88,35 @@ export default function ContactSegmentedForm() {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{t('form.name')}</label>
+                                    <label className="text-xs font-semibold text-slate-600 uppercase tracking-wider">{t('form.name')}</label>
                                     <input required name="fullName" type="text" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 text-slate-900 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{t('form.email')}</label>
+                                    <label className="text-xs font-semibold text-slate-600 uppercase tracking-wider">{t('form.email')}</label>
                                     <input required name="email" type="email" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 text-slate-900 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" />
                                 </div>
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{t('form.phone')}</label>
+                                    <label className="text-xs font-semibold text-slate-600 uppercase tracking-wider">{t('form.phone')}</label>
                                     <input required name="phone" type="tel" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 text-slate-900 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{activeTab === 'business' ? t('form.company') : t('form.position')}</label>
+                                    <label className="text-xs font-semibold text-slate-600 uppercase tracking-wider">{activeTab === 'business' ? t('form.company') : t('form.position')}</label>
                                     <input required name={activeTab === 'business' ? 'company' : 'position'} type="text" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 text-slate-900 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" />
                                 </div>
                             </div>
 
                             {activeTab === 'career' && (
                                 <div className="space-y-2">
-                                    <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{t('form.cv')}</label>
-                                    <input name="cv" type="file" accept=".pdf" className="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer" />
+                                    <label className="text-xs font-semibold text-slate-600 uppercase tracking-wider">{t('form.cv')}</label>
+                                    <input name="cv" type="file" accept=".pdf" className="w-full text-sm text-slate-600 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer" />
                                 </div>
                             )}
 
                             <div className="space-y-2">
-                                <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{t('form.message')}</label>
+                                <label className="text-xs font-semibold text-slate-600 uppercase tracking-wider">{t('form.message')}</label>
                                 <textarea name="message" rows={4} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 text-slate-900 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none"></textarea>
                             </div>
 
@@ -159,7 +159,7 @@ export default function ContactSegmentedForm() {
                                             </div>
                                             <div>
                                                 <h4 className="font-bold text-slate-900 text-sm mb-1">{t('business.features.nda')}</h4>
-                                                <p className="text-xs text-slate-500">Full confidentiality guaranteed.</p>
+                                                <p className="text-xs text-slate-600">{t('form.features.confidentiality')}</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4">
@@ -168,7 +168,7 @@ export default function ContactSegmentedForm() {
                                             </div>
                                             <div>
                                                 <h4 className="font-bold text-slate-900 text-sm mb-1">{t('business.features.response')}</h4>
-                                                <p className="text-xs text-slate-500">Priority support channel.</p>
+                                                <p className="text-xs text-slate-600">{t('form.features.priority')}</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4">
@@ -177,7 +177,7 @@ export default function ContactSegmentedForm() {
                                             </div>
                                             <div>
                                                 <h4 className="font-bold text-slate-900 text-sm mb-1">{t('business.features.custom')}</h4>
-                                                <p className="text-xs text-slate-500">Tailored to your KPIs.</p>
+                                                <p className="text-xs text-slate-600">{t('form.features.kpis')}</p>
                                             </div>
                                         </div>
                                     </>
@@ -189,7 +189,7 @@ export default function ContactSegmentedForm() {
                                             </div>
                                             <div>
                                                 <h4 className="font-bold text-slate-900 text-sm mb-1">{t('career.features.training')}</h4>
-                                                <p className="text-xs text-slate-500">Full certification included.</p>
+                                                <p className="text-xs text-slate-600">{t('form.features.certification')}</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4">
@@ -198,7 +198,7 @@ export default function ContactSegmentedForm() {
                                             </div>
                                             <div>
                                                 <h4 className="font-bold text-slate-900 text-sm mb-1">{t('career.features.uncapped')}</h4>
-                                                <p className="text-xs text-slate-500">Write your own paycheck.</p>
+                                                <p className="text-xs text-slate-600">{t('form.features.paycheck')}</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4">
@@ -207,7 +207,7 @@ export default function ContactSegmentedForm() {
                                             </div>
                                             <div>
                                                 <h4 className="font-bold text-slate-900 text-sm mb-1">{t('career.features.growth')}</h4>
-                                                <p className="text-xs text-slate-500">Merit-based promotion.</p>
+                                                <p className="text-xs text-slate-600">{t('form.features.merit')}</p>
                                             </div>
                                         </div>
                                     </>
@@ -218,13 +218,13 @@ export default function ContactSegmentedForm() {
                         <div className="mt-12 pt-8 border-t border-slate-200">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
-                                <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Live Support</span>
+                                <span className="text-xs font-bold text-slate-600 uppercase tracking-widest">{t('form.liveSupport')}</span>
                             </div>
                             <p className="text-sm text-slate-600 mb-2">
-                                <span className="font-bold text-slate-900">Email:</span> info@aicitel.com
+                                <span className="font-bold text-slate-900">{t('form.emailLabel')}</span> info@aicitel-company.com
                             </p>
                             <p className="text-sm text-slate-600">
-                                <span className="font-bold text-slate-900">Phone:</span> 0345 4700 9014
+                                <span className="font-bold text-slate-900">{t('form.phoneLabel')}</span> 0345 4700 9014
                             </p>
                         </div>
                     </div>

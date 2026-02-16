@@ -3,6 +3,7 @@ import { Link } from '@/navigation';
 
 export default function Partner() {
     const t = useTranslations('PartnerSection');
+    const tInvite = useTranslations('PartnerInvite');
 
     return (
         <section id="partner" className="py-24 bg-primary relative overflow-hidden">
@@ -41,8 +42,8 @@ export default function Partner() {
                                 style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80")' }}
                             />
                             <div className="absolute bottom-8 left-8 z-20">
-                                <p className="text-white font-bold text-xl">Grow together.</p>
-                                <p className="text-slate-300 text-sm">Join our network of market leaders.</p>
+                                <p className="text-white font-bold text-xl">{tInvite('title')}</p>
+                                <p className="text-slate-300 text-sm">{tInvite('subtitle')}</p>
                             </div>
                         </div>
                     </div>

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { BlocksRenderer } from '@strapi/blocks-react-renderer'; // Type import fix
 
 import { useTranslations } from 'next-intl';
+import { Plus, Minus } from 'lucide-react';
 
 export default function FAQAccordion({ items }: { items: any[] }) {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -28,29 +29,38 @@ export default function FAQAccordion({ items }: { items: any[] }) {
 
     return (
         <div className="space-y-4">
-            {items.map((faq, index) => (
-                <div key={faq.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden">
-                    <button
-                        onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                        className="w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none"
-                    >
-                        <span className="font-semibold text-gray-900">{faq.attributes.question}</span>
-                        <span className="text-primary text-xl font-bold">{openIndex === index ? '−' : '+'}</span>
-                    </button>
-                    <div
-                        className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96' : 'max-h-0'}`}
-                    >
-                        <div className="px-6 pb-4 text-gray-600 text-sm">
-                            {/* Handle Rich Text or String */}
-                            {typeof faq.attributes.answer === 'string' ? (
-                                faq.attributes.answer
-                            ) : (
-                                <BlocksRenderer content={faq.attributes.answer} />
-                            )}
+            {items.map((faq, index) => {
+                const isOpen = openIndex === index;
+                return (
+                    <div key={faq.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                        <button
+                            onClick={() => setOpenIndex(isOpen ? null : index)}
+                            className="w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none"
+                        >
+                            <span className="font-semibold text-gray-900">{faq.question}</span>
+                            <span className="shrink-0 ml-4">
+                                {isOpen ? <Minus className="w-5 h-5 text-primary" /> : <Plus className="w-5 h-5 text-slate-400" />}
+                            </span>
+                        </button>
+
+                        <div
+                            className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                                }`}
+                        >
+                            <div className="pb-6 text-slate-600 leading-relaxed text-sm md:text-base">
+                                {/* Handle Rich Text or String */}
+                                {typeof faq.answer === 'string' ? (
+                                    faq.answer
+                                ) : faq.answer ? (
+                                    <BlocksRenderer content={faq.answer} />
+                                ) : (
+                                    <p className="text-gray-400 italic">{t('noAnswer')}</p>
+                                )}
+                            </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                );
+            })}
         </div>
     );
 }
