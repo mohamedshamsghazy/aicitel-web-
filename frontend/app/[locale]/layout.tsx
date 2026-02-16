@@ -11,6 +11,14 @@ import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
+export function generateStaticParams() {
+    return [
+        { locale: 'de' },
+        { locale: 'en' },
+        { locale: 'ar' }
+    ];
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'Index' });
