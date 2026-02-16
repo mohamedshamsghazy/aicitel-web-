@@ -1,0 +1,536 @@
+{
+    "StickyHeader": {
+        "home": "Startseite",
+        "about": "Über uns",
+        "career": "Karriere",
+        "partner": "Partner",
+        "contact": "Kontakt",
+        "projectRequest": "Audit anfordern",
+        "applyNow": "Jetzt bewerben"
+    },
+    "Hero": {
+        "headlineHighlight": "Skalierbarer Vertrieb",
+        "headline": "Deutschlands Premium-Infrastruktur für den Direktvertrieb",
+        "subline": "Wir skalieren Vertriebsorganisationen für Energie- und Telekommunikationskonzerne. Compliance-konform. Datengetrieben. Zertifiziert.",
+        "ctaProject": "Für Unternehmen: Umsatz skalieren",
+        "ctaJoin": "Für Talente: Karriere starten",
+        "badgeTopCompany": "Compliance",
+        "badgeYear": "Geprüft",
+        "badgeTrusted": "Wachstum",
+        "badgePartner": "Framework",
+        "badgeIndustry": "Standards",
+        "badgeMember": "Zertifiziert"
+    },
+    "TrustSection": {
+        "subtitle": "GEBAUT FÜR REGULIERTE BRANCHEN"
+    },
+    "Mission": {
+        "headline": "Unser Standard",
+        "headlineHighlight": "Ist Exzellenz",
+        "text1": "Wir transformieren den Direktvertrieb. Durch Exzellenz in Ausbildung und Technologie schaffen wir nachhaltige Marktdurchdringung für unsere Partner.",
+        "text2": "Unsere Mission ist der Aufbau der strukturiertesten Vertriebsorganisation Deutschlands – getrieben von Integrität, Ausbildung und Transparenz."
+    },
+    "Vision": {
+        "label": "Zukunft",
+        "sublabel": "Sales Intelligence",
+        "headline": "Teil der",
+        "headlineHighlight": "Zukunft werden",
+        "text1": "Wir bauen ein Vertriebsökosystem, in dem Struktur auf digitale Intelligenz trifft.",
+        "text2": "Unsere Vision ist es, die primäre Infrastruktur für Deutschlands Telekommunikations- und Energiesektor zu sein."
+    },
+    "UberUns": {
+        "label": "Unternehmensprofil",
+        "subtitle": "ÜBER UNS",
+        "imageLeadershipLabel": "Führungsteam",
+        "imageLeadershipHeadline": "Erfahrung trifft Innovation",
+        "headline": "Strukturierte Vertriebsoperationen",
+        "text": "Mit Hauptsitz in <bold>Halle (Saale)</bold> ist Aicitel ein strategischer Wachstumspartner für DAX-Konzerne und Marktführer. Wir kombinieren lokalen Fokus mit nationaler Ambition.",
+        "statEmployees": "Vertriebsprofis",
+        "statLocations": "Regionale Hubs",
+        "statCustomers": "Neukunden",
+        "cta": "Unternehmensprofil ansehen"
+    },
+    "CareerOpportunities": {
+        "label": "Karrierepfad",
+        "headline": "Starten Sie eine professionelle Karriere bei",
+        "headlineHighlight": "Aicitel",
+        "subline": "Werden Sie Teil eines strukturierten Umfelds, in dem Leistung Ihren Weg bestimmt. Klare Pfade. Definierte Standards.",
+        "cta": "Bewerbung starten",
+        "benefit1": "Leistungsbasierte Beförderung",
+        "benefit2": "Transparentes Provisionsmodell",
+        "benefit3": "IHK-Standard Ausbildung",
+        "benefit4": "Mentoring Programm"
+    },
+    "BenefitsHighlight": {
+        "cta": "JETZT BEWERBEN",
+        "card1Title": "Meritokratische Kultur",
+        "card1Text": "Ihr Alter spielt keine Rolle. Ihr Hintergrund spielt keine Rolle. Nur Ihre Einhaltung von Standards und Leistung zählt.",
+        "card2Title": "Professionelle Academy",
+        "card2Text": "Tägliches Coaching und Zugang zu unserem proprietären Verkaufspsychologie-Curriculum.",
+        "card3Title": "Strukturierter Aufstieg",
+        "card3Text": "Transparenter Aufstiegspfad vom Junior Sales zum Management basierend auf klaren KPIs.",
+        "card4Title": "Finanzielle Unabhängigkeit",
+        "card4Text": "Wettbewerbsfähiges Grundgehalt plus branchenführende Provisionsmodelle."
+    },
+    "EmployeeTestimonials": {
+        "label": "Unsere Standards",
+        "headline": "Führungsprinzipien",
+        "t1Name": "Integrität",
+        "t1Role": "Kernwert",
+        "t1Quote": "Wir verkaufen nicht. Wir beraten. Jede Interaktion muss dem Kunden Mehrwert bieten und den Ruf unserer Partner wahren.",
+        "t2Name": "Exzellenz",
+        "t2Role": "Kernwert",
+        "t2Quote": "Gut genug ist nicht genug. Wir streben nach Perfektion in Compliance, Auftreten und Ausführung.",
+        "t3Name": "Wachstum",
+        "t3Role": "Kernwert",
+        "t3Quote": "Wir glauben an stetige Verbesserung. Unsere Trainingssysteme sind darauf ausgelegt, Karrieren zu bauen, nicht nur Jobs."
+    },
+    "KurzErklaert": {
+        "label": "Die Chance",
+        "headline": "Warum Top-Talente",
+        "headlineBreak": "Aicitel wählen",
+        "text": "Aicitel ist eine spezialisierte Unternehmensberatung für High-End-Vertriebslösungen. Wir bieten ambitionierten Talenten einen strukturierten Karriereweg zur finanziellen Unabhängigkeit und Führungsverantwortung."
+    },
+    "MentoringDetails": {
+        "block1Title": "Dediziertes Mentoring",
+        "block1Text": "Erfolg hinterlässt Spuren. Sie werden einem Senior-Mentor zugeteilt, der den Weg vor Ihnen gegangen ist. Tägliche Feedback-Schleifen garantieren tägliche Verbesserung.",
+        "block2Title": "Kontinuierliche Weiterbildung",
+        "block2Text": "Zugang zu unserer digitalen Lernplattform und wöchentlichen Workshops zu Verhandlung, Psychologie und Führung."
+    },
+    "EmployeeSuccess": {
+        "headline": "Bewiesene Karrierewege",
+        "text": "Unsere Managementstruktur basiert auf Leistung. Wir befördern von innen heraus basierend auf operativer Exzellenz.",
+        "imageLabelTitle": "Management Team",
+        "imageLabelText": "Auf Leistung gebaut."
+    },
+    "ProductPartner": {
+        "label": "B2B Lösungen",
+        "headline": "Skalieren Sie Ihre Neukundengewinnung",
+        "text": "Verlassen Sie sich nicht auf unvorhersehbare Marketingkanäle. Unsere Direktvertriebsorganisation liefert garantierte Interaktionen und unterschriebene Verträge mit hohem Customer Lifetime Value.",
+        "card1Title": "Skalierbarer Einsatz",
+        "card1Text": "Einsatz zertifizierter Agenten in neuen Regionen mit standardisiertem Onboarding.",
+        "card2Title": "Markenschutz",
+        "card2Text": "Compliance-First Ansatz garantiert perfekte Markenrepräsentation.",
+        "card3Title": "Kosteneffizienz",
+        "card3Text": "Variables Kostenmodell. Sie zahlen für Ergebnisse, nicht für Stunden.",
+        "cta": "Vertriebsaudit anfordern"
+    },
+    "Contact": {
+        "label": "Kontakt",
+        "headline": "Lassen Sie uns über Wachstum sprechen",
+        "formName": "Vollständiger Name",
+        "formNamePlaceholder": "Max Mustermann",
+        "formEmail": "Geschäfts-E-Mail",
+        "formEmailPlaceholder": "name@firma.de",
+        "formSubject": "Art der Anfrage",
+        "optionProject": "Unternehmenspartnerschaft",
+        "optionCareer": "Bewerbung",
+        "optionGeneral": "Allgemeine Anfrage",
+        "formMessage": "Projektdetails",
+        "formMessagePlaceholder": "Erzählen Sie uns von Ihren Zielen...",
+        "submitButton": "Anfrage senden",
+        "infoPhone": "Telefon",
+        "infoPhoneTime": "Mo-Fr, 9:00 - 18:00 MEZ",
+        "infoEmail": "E-Mail",
+        "infoEmailText": "Antwort < 24h",
+        "infoLocation": "Hauptsitz"
+    },
+    "About": {
+        "headline": "DAS SIND WIR",
+        "subheadline": "Präzision. Vertrauen. Erfolg."
+    },
+    "Footer": {
+        "logoSubtitle": "Der Standard für Exzellenz im Direktvertrieb in Deutschland.",
+        "preFooter": {
+            "headline": "Bereit für Skalierung?",
+            "subline": "Sprechen Sie mit unseren Strategen über Ihre Vertriebsziele.",
+            "cta": "Audit anfordern"
+        },
+        "imprint": "Impressum",
+        "privacy": "Datenschutz",
+        "contact": "Kontakt & Standort",
+        "rights": "Alle Rechte vorbehalten.",
+        "information": "Rechtliches",
+        "company": "Unternehmen",
+        "solutions": "Lösungen",
+        "followUs": "Folgen Sie uns",
+        "about": "Über uns",
+        "career": "Karriere & Jobs",
+        "partner": "Für Unternehmen",
+        "iso": "ISO 9001 Konform",
+        "gdpr": "DSGVO Sicher"
+    },
+    "Index": {
+        "title": "Aicitel - Premium Direktvertriebsagentur Deutschland",
+        "metaDescription": "Skalierbare Neukundengewinnung und Vertriebsoutsourcing für Energie & Telekommunikation. Zertifiziert, konform und leistungsorientiert."
+    },
+    "Navigation": {
+        "home": "Startseite",
+        "about": "Unternehmen",
+        "services": "Lösungen",
+        "career": "Karriere",
+        "partner": "Partner",
+        "contact": "Kontakt"
+    },
+    "Solutions": {
+        "title": "Unsere Lösungen",
+        "subtitle": "End-to-End Vertriebsinfrastruktur.",
+        "directSales": {
+            "title": "Außendienst",
+            "description": "Persönliche Neukundengewinnung mit hohen Abschlussquoten.",
+            "cta": "Details ansehen"
+        },
+        "acquisition": {
+            "title": "Lead-Generierung",
+            "description": "Qualifizierung von Interessenten vor dem Trichter.",
+            "cta": "Details ansehen"
+        },
+        "optimization": {
+            "title": "Vertriebsberatung",
+            "description": "Optimierung Ihrer internen Skripte und Prozesse.",
+            "cta": "Details ansehen"
+        }
+    },
+    "CaseStudies": {
+        "title": "Branchenexpertise",
+        "subtitle": "Methodik, die Ergebnisse liefert.",
+        "case1": {
+            "title": "Energiesektor",
+            "metric": "Skalierbar",
+            "desc": "Modell zur Neukundengewinnung",
+            "tag": "Energie"
+        },
+        "case2": {
+            "title": "Telekom Rollout",
+            "metric": "Regional",
+            "desc": "Glasfaser-Infrastrukturausbau",
+            "tag": "Telekom"
+        },
+        "case3": {
+            "title": "Markteintritt",
+            "metric": "Rapid",
+            "desc": "Time-to-Market Deployment",
+            "tag": "Infra"
+        }
+    },
+    "Testimonials": {
+        "title": "Partner & Menschen",
+        "employees": {
+            "tab": "Unser Team",
+            "item1": {
+                "quote": "Aicitel erschafft Gewinner. Wenn du bereit bist hart zu arbeiten, gibt es keine Grenzen.",
+                "name": "Thomas K.",
+                "role": "Sales Manager"
+            },
+            "item2": {
+                "quote": "Strukturiert, professionell, fair. Alles was ich woanders vermisst habe.",
+                "name": "Julia M.",
+                "role": "Teamleiterin"
+            },
+            "item3": {
+                "quote": "Die beste Vertriebsschule des Landes. Punkt.",
+                "name": "Lukas B.",
+                "role": "Sales Rep"
+            }
+        },
+        "partners": {
+            "tab": "Unternehmenspartner",
+            "item1": {
+                "quote": "Aicitel senkte unsere CAC um 40% bei gleichzeitig höherer Kundenbindung als unsere internen Teams.",
+                "name": "Führender Energieversorger",
+                "role": "VP Sales"
+            },
+            "item2": {
+                "quote": "Sie ermöglichten uns den gleichzeitigen Start in 3 neuen Bundesländern.",
+                "name": "Nationaler Netzbetreiber",
+                "role": "CEO"
+            },
+            "item3": {
+                "quote": "Compliance war unsere größte Sorge. Die Standards von Aicitel sind höher als unsere eigenen.",
+                "name": "Greentech Konzern",
+                "role": "COO"
+            }
+        }
+    },
+    "FAQPage": {
+        "metaTitle": "FAQ - Fragen & Antworten",
+        "metaDescription": "Häufige Fragen zur Arbeit bei und mit Aicitel.",
+        "title": "Häufig gestellte Fragen",
+        "q1": "Wie funktioniert die Provisionsstruktur?",
+        "a1": "Wir bieten ein branchenführendes Modell mit solidem Grundgehalt plus ungedeckelten Provisionen. Top-Performer erreichen regelmäßig überdurchschnittliche Ergebnisse.",
+        "q2": "Benötige ich Vertriebserfahrung?",
+        "a2": "Nein. Wir stellen nach Einstellung ein und trainieren Fähigkeiten. Unsere Academy bringt Ihnen alles bei, was Sie wissen müssen.",
+        "q3": "Wie schnell können wir ein Team einsetzen?",
+        "a3": "Für Partner können wir typischerweise innerhalb von 2-3 Wochen eine dedizierte Sales-Squad von 5-10 Agenten mobilisieren.",
+        "q4": "Ist das Tür-zu-Tür Vertrieb?",
+        "a4": "Wir spezialisieren uns auf Direktvertrieb, was D2D, Retail und Event-Sales umfasst. Es ist der effektivste Kanal für komplexe Produkte.",
+        "q5": "Was macht Aicitel anders?",
+        "a5": "Wir konzentrieren uns auf Qualität statt Quantität. Unsere Agenten sind intensiv in Beratung geschult, nicht in Druckverkauf, was zu niedrigeren Stornoquoten führt."
+    },
+    "Legal": {
+        "impressumTitle": "Impressum - Rechtliche Informationen",
+        "privacyTitle": "Datenschutzerklärung",
+        "impressumHeading": "Impressum",
+        "tmg": "Angaben gemäß § 5 TMG",
+        "representedBy": "Vertreten durch:",
+        "contact": "Kontakt:",
+        "privacyHeading": "Datenschutzerklärung",
+        "privacyGeneralTitle": "Allgemeine Hinweise",
+        "privacyGeneralText": "Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+        "privacyResponsibleLabel": "Verantwortliche Stelle:",
+        "privacyRightsTitle": "Ihre Betroffenenrechte",
+        "privacyRightsIntro": "Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:",
+        "privacyRight1": "Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),",
+        "privacyRight2": "Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),",
+        "privacyRight3": "Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),",
+        "privacyRight4": "Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),",
+        "privacyRight5": "Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und",
+        "privacyRight6": "Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO)."
+    },
+    "KPI": {
+        "experience": "Sales Exzellenz",
+        "agents": "Aktive Berater",
+        "applications": "Talent Pipeline",
+        "partners": "Unternehmenspartner"
+    },
+    "Compliance": {
+        "title": "Compliance & Ethik",
+        "description": "Vertrauen ist unsere Währung. Wir halten uns an den strengsten Verhaltenskodex der Branche.",
+        "dataProtection": {
+            "title": "DSGVO Sicher",
+            "description": "Volle Datenhoheit und verschlüsselte Verarbeitung."
+        },
+        "ethics": {
+            "title": "Verhaltenskodex",
+            "description": "Null Toleranz für irreführende Verkaufspraktiken."
+        },
+        "transparency": {
+            "title": "Audit-Bereit",
+            "description": "Jeder Vertrag wird verifiziert und aufgezeichnet."
+        }
+    },
+    "EmptyStates": {
+        "faq": {
+            "title": "Keine Fragen gefunden",
+            "description": "Bitte versuchen Sie es später erneut oder kontaktieren Sie den Support.",
+            "cta": "Support kontaktieren"
+        },
+        "career": {
+            "title": "Keine offenen Stellen",
+            "description": "Schauen Sie bald wieder vorbei.",
+            "cta": "Talent Pool beitreten"
+        }
+    },
+    "Career": {
+        "title": "Karriere",
+        "subtitle": "Schließen Sie sich den Besten an.",
+        "viewAll": "Stellen ansehen",
+        "applyNow": "Jetzt bewerben",
+        "clickMore": "Mehr lesen...",
+        "fullTime": "Vollzeit"
+    },
+    "Locations": {
+        "title": "Unsere Standorte",
+        "headquarters": {
+            "city": "Halle (Saale)",
+            "type": "Hauptsitz",
+            "street": "Rauchfußstraße 2b",
+            "zip": "06128",
+            "country": "Deutschland"
+        },
+        "expansionNote": "Hauptsitz in Halle (Saale). Strategische Expansion geplant."
+    },
+    "CareerRoadmap": {
+        "title": "Ihr Weg zur Führungskraft",
+        "subtitle": "Ein klarer, transparenter Weg vom Einstieg bis zum Management.",
+        "trainee": {
+            "title": "Sales Trainee",
+            "description": "Lernen Sie die Grundlagen des Direktvertriebs, Produktwissen und Kundenpsychologie.",
+            "duration": "Monat 1-3"
+        },
+        "agent": {
+            "title": "Junior Sales Agent",
+            "description": "Meisterung des Pitches, konstante Leistung und erste Mentoring-Aufgaben.",
+            "duration": "Monat 4-12"
+        },
+        "teamlead": {
+            "title": "Teamleiter",
+            "description": "Führung eines kleinen Teams, Durchführung von Schulungen und Provisionen.",
+            "duration": "Jahr 1-2"
+        },
+        "manager": {
+            "title": "Filialleiter",
+            "description": "Leitung eines eigenen Standorts, P&L-Verantwortung und strategisches Wachstum.",
+            "duration": "Jahr 2+"
+        }
+    },
+    "ApplicationProcess": {
+        "title": "Ihr Weg zu uns",
+        "subtitle": "Unser optimierter Prozess für Ihren Start.",
+        "online": {
+            "title": "Online bewerben",
+            "description": "Senden Sie uns Ihren Lebenslauf und Details in unter 2 Minuten."
+        },
+        "interview": {
+            "title": "Erstes Interview",
+            "description": "Ein kurzes Gespräch zum gegenseitigen Kennenlernen."
+        },
+        "day": {
+            "title": "Probetag",
+            "description": "Erleben Sie unsere Kultur und den Job hautnah."
+        },
+        "offer": {
+            "title": "Jobangebot",
+            "description": "Willkommen im Team! Innovatives Onboarding startet sofort."
+        }
+    },
+    "JobsList": {
+        "title": "Offene Stellen",
+        "subtitle": "Finde die Rolle, die zu deinen Ambitionen passt.",
+        "noJobs": "Derzeit keine spezifischen Stellen ausgeschrieben, aber wir suchen immer nach Talenten.",
+        "fullTime": "Vollzeit / Teilzeit",
+        "initiative": {
+            "title": "Initiativbewerbung",
+            "text": "Keine passende Stelle dabei? Sende uns eine Initiativbewerbung.",
+            "cta": "Jetzt bewerben"
+        }
+    },
+    "ContactForms": {
+        "tabApplicants": "Bewerber",
+        "tabPartners": "Partner",
+        "contactInfoTitle": "Kontaktieren Sie uns",
+        "successTitle": "Nachricht gesendet!",
+        "successMessageApplicant": "Ihre Bewerbung ist eingegangen. Wir melden uns in Kürze.",
+        "successMessagePartner": "Danke für Ihre Anfrage. Ein Ansprechpartner wird sich melden.",
+        "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns eine E-Mail.",
+        "newMessageButton": "Neue Nachricht senden",
+        "labels": {
+            "name": "Vollständiger Name",
+            "email": "E-Mail-Adresse",
+            "phone": "Telefonnummer",
+            "cv": "Lebenslauf hochladen (PDF)",
+            "messageOptional": "Nachricht / Motivation (Optional)",
+            "company": "Firmenname",
+            "contactPerson": "Ansprechpartner",
+            "messageRequired": "Nachricht"
+        },
+        "buttons": {
+            "sending": "Sende...",
+            "submitApplicant": "Bewerbung absenden",
+            "submitPartner": "Partnerschaft anfragen"
+        }
+    },
+    "PartnerSection": {
+        "title": "Werden Sie Partner",
+        "description1": "Schließen Sie sich unserem Netzwerk von Branchenführern an.",
+        "description2": "Wir helfen Ihnen, Ihre Vertriebsoperationen zu skalieren.",
+        "cta": "Partner werden"
+    },
+    "CareerBenefits": {
+        "title": "Warum Aicitel?",
+        "subtitle": "Vorteile, die zählen.",
+        "salary": {
+            "title": "Top Gehalt",
+            "description": "Attraktives Grundgehalt + Provisionen."
+        },
+        "training": {
+            "title": "Experten-Training",
+            "description": "Tägliches Coaching und Workshops."
+        },
+        "events": {
+            "title": "Team-Events",
+            "description": "Regelmäßige Teambuildings und Reisen."
+        },
+        "technology": {
+            "title": "Moderne Tech",
+            "description": "Digitale Tools für Effizienz."
+        },
+        "remote": {
+            "title": "Flexibles Arbeiten",
+            "description": "Fokus auf Work-Life-Balance."
+        },
+        "growth": {
+            "title": "Rapides Wachstum",
+            "description": "Schnelle Aufstiegschancen."
+        }
+    },
+    "CareerPage": {
+        "metaTitle": "Karriere bei Aicitel - Werden Sie Teil der Elite",
+        "metaDescription": "Starten Sie Ihre Karriere im High-Performance-Vertrieb."
+    },
+    "ContactPage": {
+        "metaTitle": "Kontakt Aicitel - Lassen Sie uns sprechen",
+        "metaDescription": "Treten Sie mit uns in Kontakt.",
+        "title": "Kontaktieren Sie uns",
+        "subtitle": "Wir sind für Sie da.",
+        "contactInfoTitle": "Kontaktinformationen",
+        "addressLabel": "Adresse",
+        "phoneLabel": "Telefon",
+        "emailLabel": "E-Mail"
+    },
+    "PartnerPage": {
+        "metaTitle": "Partner werden - Aicitel B2B Vertriebslösungen",
+        "metaDescription": "Skalieren Sie Ihren Umsatz mit unserer Direktvertriebsorganisation."
+    },
+    "PageTitles": {
+        "partner": "Partner werden"
+    },
+    "ApplicantFAQ": {
+        "title": "Häufig gestellte Fragen",
+        "q1": "Wie funktioniert die Provisionsstruktur?",
+        "a1": "Wir bieten ein branchenführendes Modell mit solidem Grundgehalt plus ungedeckelten Provisionen. Top-Performer erreichen regelmäßig überdurchschnittliche Ergebnisse.",
+        "q2": "Benötige ich Vertriebserfahrung?",
+        "a2": "Nein. Wir stellen nach Einstellung ein und trainieren Fähigkeiten. Unsere Academy bringt Ihnen alles bei, was Sie wissen müssen.",
+        "q3": "Wie schnell können wir ein Team einsetzen?",
+        "a3": "Für Partner können wir typischerweise innerhalb von 2-3 Wochen eine dedizierte Sales-Squad von 5-10 Agenten mobilisieren.",
+        "q4": "Ist das Tür-zu-Tür Vertrieb?",
+        "a4": "Wir spezialisieren uns auf Direktvertrieb, was D2D, Retail und Event-Sales umfasst. Es ist der effektivste Kanal für komplexe Produkte.",
+        "q5": "Was macht Aicitel anders?",
+        "a5": "Wir konzentrieren uns auf Qualität statt Quantität. Unsere Agenten sind intensiv in Beratung geschult, nicht in Druckverkauf, was zu niedrigeren Stornoquoten führt."
+    },
+    "AboutPage": {
+        "metaTitle": "Über Aicitel - Leistung & Integrität",
+        "metaDescription": "Erfahren Sie mehr über Deutschlands führende Direktvertriebsagentur."
+    },
+    "ContactNew": {
+        "hero": {
+            "badge": "Kontakt & Bewerbung",
+            "title": "Lassen Sie uns über Ziele sprechen.",
+            "subtitle": "Ob Sie skalieren wollen oder bereit für den nächsten Karriereschritt sind - wir sind bereit."
+        },
+        "tabs": {
+            "business": "Für Unternehmen",
+            "career": "Für Bewerber"
+        },
+        "business": {
+            "title": "Unternehmenspartnerschaft",
+            "description": "Sprechen Sie mit unseren Strategen über Ihre Vertriebsziele.",
+            "features": {
+                "nda": "NDA auf Anfrage",
+                "response": "Antwort < 24h",
+                "custom": "Individuelle Strategie"
+            }
+        },
+        "career": {
+            "title": "Karriere bei Aicitel",
+            "description": "Starten Sie Ihre Karriere im High-Performance Vertrieb.",
+            "features": {
+                "training": "Bezahlte Ausbildung",
+                "uncapped": "Ungedeckelte Provision",
+                "growth": "Schneller Aufstieg"
+            }
+        },
+        "form": {
+            "name": "Ihr Name",
+            "email": "E-Mail Adresse",
+            "phone": "Telefonnummer",
+            "company": "Unternehmen",
+            "position": "Position",
+            "message": "Wie können wir helfen?",
+            "cv": "Lebenslauf (PDF)",
+            "submitBusiness": "Audit anfordern",
+            "submitCareer": "Bewerbung absenden",
+            "privacy": "Ihre Daten sind sicher und werden streng vertraulich behandelt."
+        }
+    }
+}

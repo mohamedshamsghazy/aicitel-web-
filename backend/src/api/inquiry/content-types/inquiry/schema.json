@@ -1,0 +1,41 @@
+{
+    "kind": "collectionType",
+    "collectionName": "inquiries",
+    "info": {
+        "singularName": "inquiry",
+        "pluralName": "inquiries",
+        "displayName": "Inquiry",
+        "description": "Contact inquiries"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "companyName": {
+            "type": "string"
+        },
+        "contactPerson": {
+            "type": "string",
+            "required": true
+        },
+        "email": {
+            "type": "email",
+            "required": true
+        },
+        "phone": {
+            "type": "string"
+        },
+        "message": {
+            "type": "text"
+        },
+        "type": {
+            "type": "enumeration",
+            "enum": [
+                "Partner",
+                "General"
+            ],
+            "default": "General"
+        }
+    }
+}

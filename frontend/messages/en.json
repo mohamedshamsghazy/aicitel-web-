@@ -1,0 +1,536 @@
+{
+    "StickyHeader": {
+        "home": "Home",
+        "about": "About Us",
+        "career": "Career",
+        "partner": "Partners",
+        "contact": "Contact",
+        "projectRequest": "Request Audit",
+        "applyNow": "Apply Now"
+    },
+    "Hero": {
+        "headlineHighlight": "Scalable Sales",
+        "headline": "Germany's Premium Infrastructure for Direct Sales",
+        "subline": "We scale sales organizations for energy and telecommunication leaders. Compliant. Data-driven. Certified.",
+        "ctaProject": "For Companies: Scale Revenue",
+        "ctaJoin": "For Talent: Start Career",
+        "badgeTopCompany": "Compliance",
+        "badgeYear": "Verified",
+        "badgeTrusted": "Growth",
+        "badgePartner": "Framework",
+        "badgeIndustry": "Standards",
+        "badgeMember": "Certified"
+    },
+    "TrustSection": {
+        "subtitle": "BUILT FOR REGULATED INDUSTRIES"
+    },
+    "Mission": {
+        "headline": "Our Standard",
+        "headlineHighlight": "Is Excellence",
+        "text1": "We are professionalizing direct sales. We replace 'sales pressure' with 'expert consultation', building long-term value for our partners.",
+        "text2": "Our mission is to establish the most structured sales organization in Germany, driven by integrity, training, and transparency."
+    },
+    "Vision": {
+        "label": "Future Focus",
+        "sublabel": "Sales Intelligence",
+        "headline": "Be Part of",
+        "headlineHighlight": "The Future",
+        "text1": "We are building a sales ecosystem where structure meets digital intelligence.",
+        "text2": "Our vision is to become the primary infrastructure for Germany's telecommunication and energy sectors."
+    },
+    "UberUns": {
+        "label": "Corporate Profile",
+        "subtitle": "ABOUT US",
+        "imageLeadershipLabel": "Leadership Team",
+        "imageLeadershipHeadline": "Experience Meets Innovation",
+        "headline": "Structured Sales Operations",
+        "text": "Headquartered in <bold>Halle (Saale)</bold>, Aicitel is a strategic growth partner for DAX-listed companies and market challengers. We combine local focus with national ambition.",
+        "statEmployees": "Sales Professionals",
+        "statLocations": "Regional Hubs",
+        "statCustomers": "New Customers",
+        "cta": "View Corporate Profile"
+    },
+    "CareerOpportunities": {
+        "label": "Career Path",
+        "headline": "Build a Professional Career at",
+        "headlineHighlight": "Aicitel",
+        "subline": "Join a structured environment where performance dictates your trajectory. Clear pathways. Defined standards.",
+        "cta": "Start Your Application",
+        "benefit1": "Performance-Based Promotion",
+        "benefit2": "Transparent Commission Model",
+        "benefit3": "IHK-Standard Training",
+        "benefit4": "Mentorship Program"
+    },
+    "BenefitsHighlight": {
+        "cta": "APPLY NOW",
+        "card1Title": "Meritocratic Culture",
+        "card1Text": "Your age doesn't matter. Your background doesn't matter. Only your adherence to standards and performance counts.",
+        "card2Title": "Professional Academy",
+        "card2Text": "Daily coaching and access to our proprietary sales psychology curriculum.",
+        "card3Title": "Structured Advancement",
+        "card3Text": "Transparent promotion path from Junior Sales to Management based on clear KPIs.",
+        "card4Title": "Financial Independence",
+        "card4Text": "Competitive base salary plus industry-leading commission packages."
+    },
+    "EmployeeTestimonials": {
+        "label": "Our Standards",
+        "headline": "Leadership Principles",
+        "t1Name": "Integrity",
+        "t1Role": "Core Value",
+        "t1Quote": "We do not sell. We consult. Every interaction must add value to the customer and uphold the brand reputation of our partners.",
+        "t2Name": "Excellence",
+        "t2Role": "Core Value",
+        "t2Quote": "Good enough is not enough. We strive for perfection in compliance, presentation, and execution.",
+        "t3Name": "Growth",
+        "t3Role": "Core Value",
+        "t3Quote": "We believe in continuous improvement. Our training systems are designed to build careers, not just jobs."
+    },
+    "KurzErklaert": {
+        "label": "The Opportunity",
+        "headline": "Why Top Talent",
+        "headlineBreak": "Chooses Aicitel",
+        "text": "Aicitel is a specialized management consultancy for high-end sales solutions. We offer ambitious talents a structured career path to financial independence and executive responsibility."
+    },
+    "MentoringDetails": {
+        "block1Title": "Dedicated Mentorship",
+        "block1Text": "Success leaves clues. You will be paired with a Senior Mentor who has walked the path before you. Daily feedback loops ensure you improve 1% every day.",
+        "block2Title": "Continuous Education",
+        "block2Text": "Access to our digital learning platform and weekly workshops on negotiation, psychology, and leadership."
+    },
+    "EmployeeSuccess": {
+        "headline": "Proven Career Tracks",
+        "text": "Our management structure is built on merit. We promote from within based on operational excellence.",
+        "imageLabelTitle": "Management Team",
+        "imageLabelText": "Built on Performance."
+    },
+    "ProductPartner": {
+        "label": "B2B Solutions",
+        "headline": "Scale Your Customer Acquisition",
+        "text": "Stop relying on unpredictable marketing channels. Our direct sales force delivers guaranteed interactions and signed contracts with high lifetime value.",
+        "card1Title": "Scalable Deployment",
+        "card1Text": "Deploy certified agents to new regions with standardized onboarding.",
+        "card2Title": "Brand Protection",
+        "card2Text": "Compliance-first approach ensuring your brand is represented perfectly.",
+        "card3Title": "Cost Efficiency",
+        "card3Text": "Variable cost model. You pay for results, not just hours.",
+        "cta": "Request Sales Audit"
+    },
+    "Contact": {
+        "label": "Contact Us",
+        "headline": "Let's Talk Growth",
+        "formName": "Full Name",
+        "formNamePlaceholder": "John Doe",
+        "formEmail": "Business Email",
+        "formEmailPlaceholder": "name@company.com",
+        "formSubject": "Inquiry Type",
+        "optionProject": "Corporate Partnership",
+        "optionCareer": "Career Application",
+        "optionGeneral": "General Inquiry",
+        "formMessage": "Project Details",
+        "formMessagePlaceholder": "Tell us about your goals...",
+        "submitButton": "Send Inquiry",
+        "infoPhone": "Phone",
+        "infoPhoneTime": "Mon-Fri, 9:00 - 18:00 CET",
+        "infoEmail": "Email",
+        "infoEmailText": "Response < 24h",
+        "infoLocation": "Headquarters"
+    },
+    "About": {
+        "headline": "THIS IS US",
+        "subheadline": "Precision. Trust. Success."
+    },
+    "Footer": {
+        "logoSubtitle": "The Standard for Direct Sales Excellence in Germany.",
+        "preFooter": {
+            "headline": "Ready to Scale?",
+            "subline": "Talk to our strategists about your sales goals.",
+            "cta": "Request Audit"
+        },
+        "imprint": "Imprint",
+        "privacy": "Privacy Policy",
+        "contact": "Contact",
+        "rights": "All rights reserved.",
+        "information": "Information",
+        "company": "Company",
+        "followUs": "Follow Us",
+        "about": "About Us",
+        "career": "Career",
+        "partner": "Partners",
+        "solutions": "Solutions",
+        "iso": "ISO 9001 Compliant",
+        "gdpr": "GDPR Secure"
+    },
+    "Index": {
+        "title": "Aicitel - Premium Direct Sales Agency Germany",
+        "metaDescription": "Scalable customer acquisition and sales outsourcing for Energy & Telecom leaders. Certified, compliant, and performance-driven."
+    },
+    "Navigation": {
+        "home": "Home",
+        "about": "Company",
+        "services": "Solutions",
+        "career": "Careers",
+        "partner": "Partners",
+        "contact": "Contact"
+    },
+    "Solutions": {
+        "title": "Our Solutions",
+        "subtitle": "End-to-End sales infrastructure.",
+        "directSales": {
+            "title": "Field Sales",
+            "description": "Face-to-face customer acquisition with high closing rates.",
+            "cta": "View Details"
+        },
+        "acquisition": {
+            "title": "Lead Generation",
+            "description": "Qualifying prospects before they reach your funnel.",
+            "cta": "View Details"
+        },
+        "optimization": {
+            "title": "Sales Consulting",
+            "description": "Optimizing your internal sales scripts and processes.",
+            "cta": "View Details"
+        }
+    },
+    "CaseStudies": {
+        "title": "Industry Expertise",
+        "subtitle": "Methodology that delivers results.",
+        "case1": {
+            "title": "Energy Sector",
+            "metric": "Scalable",
+            "desc": "Customer Acquisition Model",
+            "tag": "Energy"
+        },
+        "case2": {
+            "title": "Telecom Rollout",
+            "metric": "Regional",
+            "desc": "Fiber Infrastructure Expansion",
+            "tag": "Telecom"
+        },
+        "case3": {
+            "title": "Market Entry",
+            "metric": "Rapid",
+            "desc": "Time-to-Market Deployment",
+            "tag": "Infra"
+        }
+    },
+    "Testimonials": {
+        "title": "Partners & People",
+        "employees": {
+            "tab": "Our Team",
+            "item1": {
+                "quote": "Aicitel creates winners. If you are willing to work hard, there is no ceiling.",
+                "name": "Thomas K.",
+                "role": "Sales Manager"
+            },
+            "item2": {
+                "quote": "Structured, professional, fairness. Everything I missed elsewhere.",
+                "name": "Julia M.",
+                "role": "Team Leader"
+            },
+            "item3": {
+                "quote": "The best sales school in the country. Period.",
+                "name": "Lukas B.",
+                "role": "Sales Rep"
+            }
+        },
+        "partners": {
+            "tab": "Corporate Partners",
+            "item1": {
+                "quote": "Aicitel lowered our CAC by 40% while delivering higher retention rates than our internal teams.",
+                "name": "Leading Energy Provider",
+                "role": "VP Sales"
+            },
+            "item2": {
+                "quote": "They enabled us to launch in 3 new states simultaneously.",
+                "name": "National Telecom Operator",
+                "role": "CEO"
+            },
+            "item3": {
+                "quote": "Compliance was our biggest concern. Aicitel's standards are higher than our own.",
+                "name": "Sustainable Tech Firm",
+                "role": "COO"
+            }
+        }
+    },
+    "FAQPage": {
+        "metaTitle": "FAQ - Questions & Answers",
+        "metaDescription": "Common questions about working with and at Aicitel.",
+        "title": "Frequently Asked Questions",
+        "q1": "How does the commission structure work?",
+        "a1": "We offer an industry-leading model with a solid base salary plus uncapped commissions. High achievers regularly exceed industry standards.",
+        "q2": "Do you require previous sales experience?",
+        "a2": "No. We hire for attitude and train for skill. Our academy will teach you everything you need to know.",
+        "q3": "How quickly can we deploy a team?",
+        "a3": "For partners, we can typically mobilize a dedicated sales squad of 5-10 agents within 2-3 weeks.",
+        "q4": "Is this door-to-door sales?",
+        "a4": "We specialize in direct sales, which includes residential (D2D), retail, and event sales. It is the most effective channel for complex products.",
+        "q5": "What makes Aicitel different?",
+        "a5": "We focus on quality over quantity. Our agents are heavily trained in consultation, not high-pressure tactics, ensuring lower churn rates."
+    },
+    "Legal": {
+        "impressumTitle": "Imprint - Legal Information",
+        "privacyTitle": "Privacy Policy",
+        "impressumHeading": "Imprint",
+        "tmg": "Information pursuant to § 5 TMG",
+        "representedBy": "Represented by:",
+        "contact": "Contact:",
+        "privacyHeading": "Data Protection Declaration",
+        "privacyGeneralTitle": "General Information",
+        "privacyGeneralText": "We take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this data protection declaration.",
+        "privacyResponsibleLabel": "Responsible Body:",
+        "privacyRightsTitle": "Your Rights",
+        "privacyRightsIntro": "You can exercise the following rights at any time using the contact details provided by our data protection officer:",
+        "privacyRight1": "Information about your data stored by us and its processing (Art. 15 GDPR),",
+        "privacyRight2": "Correction of incorrect personal data (Art. 16 GDPR),",
+        "privacyRight3": "Deletion of your data stored by us (Art. 17 GDPR),",
+        "privacyRight4": "Restriction of data processing if we are not yet allowed to delete your data due to legal obligations (Art. 18 GDPR),",
+        "privacyRight5": "Objection to the processing of your data by us (Art. 21 GDPR) and",
+        "privacyRight6": "Data portability, provided you have consented to data processing or have concluded a contract with us (Art. 20 GDPR)."
+    },
+    "KPI": {
+        "experience": "Sales Excellence",
+        "agents": "Active Consultants",
+        "applications": "Talent Pipeline",
+        "partners": "Corporate Partners"
+    },
+    "Compliance": {
+        "title": "Compliance & Ethics",
+        "description": "Trust is our currency. We adhere to the strictest code of conduct in the industry.",
+        "dataProtection": {
+            "title": "GDPR Secure",
+            "description": "Full data sovereignty and encrypted processing."
+        },
+        "ethics": {
+            "title": "Code of Conduct",
+            "description": "Zero tolerance for misleading sales practices."
+        },
+        "transparency": {
+            "title": "Audit Ready",
+            "description": "Every contract is verified and recorded."
+        }
+    },
+    "EmptyStates": {
+        "faq": {
+            "title": "No questions found",
+            "description": "Please check back later or contact support.",
+            "cta": "Contact Support"
+        },
+        "career": {
+            "title": "No current openings",
+            "description": "Check back soon.",
+            "cta": "Join Talent Pool"
+        }
+    },
+    "Career": {
+        "title": "Careers",
+        "subtitle": "Join the best.",
+        "viewAll": "View Openings",
+        "applyNow": "Apply Now",
+        "clickMore": "Read more...",
+        "fullTime": "Full Time"
+    },
+    "Locations": {
+        "title": "Our Locations",
+        "headquarters": {
+            "city": "Halle (Saale)",
+            "type": "Headquarters",
+            "street": "Rauchfußstraße 2b",
+            "zip": "06128",
+            "country": "Germany"
+        },
+        "expansionNote": "Headquartered in Halle (Saale). Strategic expansion planned."
+    },
+    "CareerRoadmap": {
+        "title": "Your Path to Leadership",
+        "subtitle": "A clear, transparent journey from entry-level to management.",
+        "trainee": {
+            "title": "Sales Trainee",
+            "description": "Learn the basics of direct sales, product knowledge, and customer psychology.",
+            "duration": "Month 1-3"
+        },
+        "agent": {
+            "title": "Junior Sales Agent",
+            "description": "Mastering the pitch, consistent performance, and first mentoring tasks.",
+            "duration": "Month 4-12"
+        },
+        "teamlead": {
+            "title": "Team Leader",
+            "description": "Leading a small squad, conducting trainings, and earning overrides.",
+            "duration": "Year 1-2"
+        },
+        "manager": {
+            "title": "Branch Manager",
+            "description": "Running your own office, P&L responsibility, and strategic growth.",
+            "duration": "Year 2+"
+        }
+    },
+    "ApplicationProcess": {
+        "title": "How to Join",
+        "subtitle": "Our streamlined process to get you started.",
+        "online": {
+            "title": "Apply Online",
+            "description": "Submit your CV and details in under 2 minutes."
+        },
+        "interview": {
+            "title": "Initial Interview",
+            "description": "A quick call to get to know each other and discuss goals."
+        },
+        "day": {
+            "title": "Trial Day",
+            "description": "Experience our culture and the job first-hand."
+        },
+        "offer": {
+            "title": "Job Offer",
+            "description": "Welcome to the team! Innovative onboarding starts immediately."
+        }
+    },
+    "JobsList": {
+        "title": "Open Positions",
+        "subtitle": "Find the role that fits your ambition.",
+        "noJobs": "Currently no specific positions listed, but we are always looking for talent.",
+        "fullTime": "Full-time / Part-time",
+        "initiative": {
+            "title": "Unsolicited Application",
+            "text": "Don't see your role? Send us a speculative application.",
+            "cta": "Apply Now"
+        }
+    },
+    "ContactForms": {
+        "tabApplicants": "Applicants",
+        "tabPartners": "Partners",
+        "contactInfoTitle": "Get in Touch",
+        "successTitle": "Message Sent!",
+        "successMessageApplicant": "Your application has been received. We will contact you shortly.",
+        "successMessagePartner": "Thank you for your inquiry. A representative will be in touch.",
+        "errorMessage": "Something went wrong. Please try again or email us directly.",
+        "newMessageButton": "Send Another Message",
+        "labels": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "cv": "Upload CV (PDF)",
+            "messageOptional": "Message / Motivation (Optional)",
+            "company": "Company Name",
+            "contactPerson": "Contact Person",
+            "messageRequired": "Message"
+        },
+        "buttons": {
+            "sending": "Sending...",
+            "submitApplicant": "Submit Application",
+            "submitPartner": "Request Partnership"
+        }
+    },
+    "PartnerSection": {
+        "title": "Become a Partner",
+        "description1": "Join our network of industry leaders.",
+        "description2": "We help you scale your sales operations.",
+        "cta": "Partner with Us"
+    },
+    "CareerBenefits": {
+        "title": "Why Aicitel?",
+        "subtitle": "Benefits that matter.",
+        "salary": {
+            "title": "Top Salary",
+            "description": "Competitive base pay + commissions."
+        },
+        "training": {
+            "title": "Expert Training",
+            "description": "Daily coaching and workshops."
+        },
+        "events": {
+            "title": "Team Events",
+            "description": "Regular team building and trips."
+        },
+        "technology": {
+            "title": "Modern Tech",
+            "description": "Digital tools for efficiency."
+        },
+        "remote": {
+            "title": "Flexible Work",
+            "description": "Work-life balance focus."
+        },
+        "growth": {
+            "title": "Rapid Growth",
+            "description": "Fast-track promotion paths."
+        }
+    },
+    "CareerPage": {
+        "metaTitle": "Careers at Aicitel - Join the Elite",
+        "metaDescription": "Start your career in high-performance sales."
+    },
+    "ContactPage": {
+        "metaTitle": "Contact Aicitel - Let's Talk",
+        "metaDescription": "Get in touch with us.",
+        "title": "Contact Us",
+        "subtitle": "We are here to help.",
+        "contactInfoTitle": "Contact Information",
+        "addressLabel": "Address",
+        "phoneLabel": "Phone",
+        "emailLabel": "Email"
+    },
+    "PartnerPage": {
+        "metaTitle": "Partner with Aicitel - B2B Sales Solutions",
+        "metaDescription": "Scale your revenue with our direct sales force."
+    },
+    "PageTitles": {
+        "partner": "Partner with Us"
+    },
+    "ApplicantFAQ": {
+        "title": "Frequently Asked Questions",
+        "q1": "How does the commission structure work?",
+        "a1": "We offer an industry-leading model with a solid base salary plus uncapped commissions. High achievers regularly exceed €100k/year total comp.",
+        "q2": "Do you require previous sales experience?",
+        "a2": "No. We hire for attitude and train for skill. Our academy will teach you everything you need to know.",
+        "q3": "How quickly can we deploy a team?",
+        "a3": "For partners, we can typically mobilize a dedicated sales squad of 5-10 agents within 2-3 weeks.",
+        "q4": "Is this door-to-door sales?",
+        "a4": "We specialize in direct sales, which includes residential (D2D), retail, and event sales. It is the most effective channel for complex products.",
+        "q5": "What makes Aicitel different?",
+        "a5": "We focus on quality over quantity. Our agents are heavily trained in consultation, not high-pressure tactics, ensuring lower churn rates."
+    },
+    "AboutPage": {
+        "metaTitle": "About Aicitel - Performance & Integrity",
+        "metaDescription": "Learn more about Germany's premier direct sales agency."
+    },
+    "ContactNew": {
+        "hero": {
+            "badge": "Contact & Careers",
+            "title": "Let's Talk Business.",
+            "subtitle": "Whether you want to scale revenue or start a high-performance career - we are ready."
+        },
+        "tabs": {
+            "business": "For Companies",
+            "career": "For Applicants"
+        },
+        "business": {
+            "title": "Corporate Partnership",
+            "description": "Talk to our strategists about your sales goals.",
+            "features": {
+                "nda": "NDA Available",
+                "response": "Response < 24h",
+                "custom": "Custom Strategy"
+            }
+        },
+        "career": {
+            "title": "Career at Aicitel",
+            "description": "Start your career in high-performance sales.",
+            "features": {
+                "training": "Paid Training",
+                "uncapped": "Uncapped Commission",
+                "growth": "Rapid Promotion"
+            }
+        },
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "company": "Company Name",
+            "position": "Position",
+            "message": "How can we help?",
+            "cv": "Resume (PDF)",
+            "submitBusiness": "Request Audit",
+            "submitCareer": "Submit Application",
+            "privacy": "Your data is secure and treated with strict confidentiality."
+        }
+    }
+}
