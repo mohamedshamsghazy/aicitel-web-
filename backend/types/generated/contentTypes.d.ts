@@ -442,13 +442,28 @@ export interface ApiApplicationApplication extends Struct.CollectionTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
+    additionalNotes: Schema.Attribute.Text;
+    availabilityDate: Schema.Attribute.Date;
+    coverLetter: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    currentCompany: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 200;
+      }>;
+    currentPosition: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 200;
+      }>;
     cv: Schema.Attribute.Media<'files'> & Schema.Attribute.Required;
     email: Schema.Attribute.Email & Schema.Attribute.Required;
     fullName: Schema.Attribute.String & Schema.Attribute.Required;
     internalNotes: Schema.Attribute.Blocks;
+    linkedinProfile: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 500;
+      }>;
     linkedJob: Schema.Attribute.Relation<'manyToOne', 'api::job.job'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -457,7 +472,25 @@ export interface ApiApplicationApplication extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     phone: Schema.Attribute.String;
+    portfolioWebsite: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 500;
+      }>;
     publishedAt: Schema.Attribute.DateTime;
+    salaryExpectationsMax: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
+    salaryExpectationsMin: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
     stage: Schema.Attribute.Enumeration<
       ['New', 'Reviewed', 'Interview', 'Rejected', 'Hired']
     > &
@@ -465,6 +498,14 @@ export interface ApiApplicationApplication extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    yearsOfExperience: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 50;
+          min: 0;
+        },
+        number
+      >;
   };
 }
 
@@ -579,6 +620,11 @@ export interface ApiJobJob extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    employmentType: Schema.Attribute.Enumeration<
+      ['full-time', 'part-time', 'both']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'both'>;
     featuredOrder: Schema.Attribute.Integer;
     highlight: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     jobStatus: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Open'>;

@@ -10,7 +10,7 @@ export default function Hero() {
             {/* Background Image */}
             <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: 'url(/images/hero_bg.png)' }}
+                style={{ backgroundImage: 'url(/brain/8ced509d-e244-4093-bf8d-617689be9b66/hero_background_with_logo_1771377947871.png)' }}
             >
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-slate-900/70"></div>
             </div>

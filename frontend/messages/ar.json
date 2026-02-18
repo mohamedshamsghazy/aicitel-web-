@@ -678,5 +678,66 @@
             "title": "التحسين",
             "description": "تحليل مستمر وتحسين النتائج."
         }
+    },
+    "JobDetail": {
+        "interested": "مهتم؟",
+        "applyQuickly": "قدّم الآن في أقل من دقيقتين. سنتواصل معك على الفور.",
+        "applyNowButton": "قدّم الآن",
+        "applyFormTitle": "قدّم الآن",
+        "fastProcess": "عملية سريعة",
+        "noCoverLetter": "لا حاجة لخطاب تقديم",
+        "personalContact": "شخص اتصال مخصص",
+        "employmentType": {
+            "fullTime": "دوام كامل",
+            "partTime": "دوام جزئي",
+            "both": "دوام كامل / دوام جزئي"
+        }
+    },
+    "JobApplicationForm": {
+        "formTitle": "نموذج التقديم",
+        "applyingFor": "التقديم لوظيفة",
+        "sections": {
+            "personalInfo": "المعلومات الشخصية",
+            "professionalDetails": "التفاصيل المهنية",
+            "links": "الروابط وملف الأعمال",
+            "materials": "مستندات التقديم"
+        },
+        "labels": {
+            "fullName": "الاسم الكامل",
+            "email": "البريد الإلكتروني",
+            "phone": "رقم الهاتف",
+            "currentPosition": "المسمى الوظيفي الحالي",
+            "currentCompany": "الشركة الحالية",
+            "yearsOfExperience": "سنوات الخبرة",
+            "availabilityDate": "تاريخ البدء المتاح",
+            "salaryExpectationsMin": "الحد الأدنى للراتب",
+            "salaryExpectationsMax": "الحد الأقصى للراتب",
+            "linkedinProfile": "ملف LinkedIn",
+            "portfolioWebsite": "موقع المعرض / Portfolio",
+            "cv": "تحميل السيرة الذاتية",
+            "coverLetter": "خطاب التقديم",
+            "additionalNotes": "ملاحظات إضافية"
+        },
+        "placeholders": {
+            "currentPosition": "مثال: مدير مبيعات",
+            "currentCompany": "مثال: شركة النخبة",
+            "uploadCV": "اضغط للتحميل أو اسحب الملف هنا",
+            "coverLetter": "أخبرنا لماذا أنت مناسب لهذه الوظيفة..."
+        },
+        "buttons": {
+            "submit": "إرسال الطلب",
+            "submitting": "جاري الإرسال...",
+            "submitAnother": "إرسال طلب آخر"
+        },
+        "successTitle": "تم استلام طلبك!",
+        "successMessage": "شكراً لتقديمك على وظيفة {jobTitle}. سنقوم بمراجعة طلبك والتواصل معك قريباً.",
+        "submitAnother": "إرسال طلب آخر",
+        "errorSecurityCheck": "يرجى إكمال التحقق الأمني.",
+        "errorMessage": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+    },
+    "ThankYou": {
+        "title": "تم استلام الرسالة",
+        "description": "شكراً لتواصلك مع Aicitel. لقد استلم فريقنا طلبك وسيتم معالجته قريباً. يجب أن تتلقى بريداً إلكترونياً للتأكيد في غضون ٢٤ ساعة.",
+        "button": "العودة للرئيسية"
     }
 }

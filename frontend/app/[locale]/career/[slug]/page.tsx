@@ -1,10 +1,11 @@
 import { getJobBySlug } from '@/lib/api';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { notFound } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { Link } from '@/navigation';
 import { BlocksRenderer } from '@strapi/blocks-react-renderer';
 import ContactForms from '@/components/ContactForms';
+import JobApplicationForm from '@/components/JobApplicationForm';
 
 interface Props {
     params: Promise<{
@@ -55,6 +56,7 @@ export async function generateMetadata({ params }: Props) {
 export default async function JobPage({ params }: Props) {
     const { slug, locale } = await params;
     const job = await getJobBySlug(slug, locale);
+    const t = await getTranslations('JobDetail');
 
     if (!job) {
         notFound();
@@ -66,6 +68,19 @@ export default async function JobPage({ params }: Props) {
         // Option: Show expired message or 404
         // return notFound();
     }
+
+    // Helper function to get employment type translation key
+    const getEmploymentTypeKey = (type: string) => {
+        switch (type) {
+            case 'full-time':
+                return 'employmentType.fullTime';
+            case 'part-time':
+                return 'employmentType.partTime';
+            case 'both':
+            default:
+                return 'employmentType.both';
+        }
+    };
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -130,7 +145,7 @@ export default async function JobPage({ params }: Props) {
                             {job.location}
                         </span>
                         <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-medium">
-                            Vollzeit / Teilzeit
+                            {t(getEmploymentTypeKey(job.employmentType || 'both'))}
                         </span>
                     </div>
                 </div>
@@ -151,24 +166,24 @@ export default async function JobPage({ params }: Props) {
                     {/* Sidebar / CTA */}
                     <div className="lg:w-1/3 space-y-6">
                         <div className="bg-white rounded-xl shadow-lg p-8 sticky top-24 border border-gray-100">
-                            <h3 className="text-xl font-bold text-primary mb-4">Interessiert?</h3>
+                            <h3 className="text-xl font-bold text-primary mb-4">{t('interested')}</h3>
                             <p className="text-gray-600 mb-6">
-                                Bewirb dich jetzt in weniger als 2 Minuten. Wir melden uns umgehend bei dir.
+                                {t('applyQuickly')}
                             </p>
 
                             <a
                                 href="#apply"
                                 className="block w-full bg-primary text-white text-center py-4 rounded-lg font-bold hover:bg-primary-light transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                             >
-                                Jetzt bewerben
+                                {t('applyNowButton')}
                             </a>
 
                             <hr className="my-6 border-gray-100" />
 
                             <div className="space-y-4 text-sm text-gray-500">
-                                <p>✓ Schneller Prozess</p>
-                                <p>✓ Kein Anschreiben nötig</p>
-                                <p>✓ Persönlicher Ansprechpartner</p>
+                                <p>✓ {t('fastProcess')}</p>
+                                <p>✓ {t('noCoverLetter')}</p>
+                                <p>✓ {t('personalContact')}</p>
                             </div>
                         </div>
                     </div>
@@ -178,14 +193,8 @@ export default async function JobPage({ params }: Props) {
             {/* Application Form Section Anchor */}
             <div id="apply" className="container mx-auto px-6 mt-24">
                 <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12">
-                    <h2 className="text-3xl font-bold text-primary mb-8 text-center">Jetzt bewerben</h2>
-                    {/* 
-                        TODO: Insert separate ApplicationForm Component here.
-                        For now, linking to Contact page or using a placeholder form would be next step.
-                        Ideally, we re-use the "Applicants" form from Contact section but pre-fill the job.
-                    */}
-                    {/* Integrated Application Form */}
-                    <ContactForms defaultTab="applicants" />
+                    <h2 className="text-3xl font-bold text-primary mb-8 text-center">{t('applyFormTitle')}</h2>
+                    <JobApplicationForm jobTitle={job.title} jobSlug={job.slug} />
                 </div>
             </div>
         </main>

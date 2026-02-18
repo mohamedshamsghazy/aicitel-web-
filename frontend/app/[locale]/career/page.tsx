@@ -2,7 +2,7 @@ import Career from '@/components/Career';
 import CareerBenefits from '@/components/CareerBenefits';
 import CareerRoadmap from '@/components/CareerRoadmap';
 import ApplicationProcess from '@/components/ApplicationProcess';
-import ApplicantFAQ from '@/components/ApplicantFAQ';
+
 import ContactForms from '@/components/ContactForms';
 import JobsList from '@/components/JobsList';
 import { getJobs } from '@/lib/api';
@@ -43,7 +43,7 @@ export default async function CareerPage({ params }: { params: Promise<{ locale:
             <CareerBenefits />
             <CareerRoadmap />
             <ApplicationProcess />
-            <ApplicantFAQ />
+
         </main>
     );
 }

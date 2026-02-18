@@ -59,6 +59,7 @@ export default function ContactForms({ defaultTab = 'applicants' }: ContactForms
         const formData = new FormData(e.currentTarget);
         const data = Object.fromEntries(formData.entries());
         data.token = token;
+        data.type = 'Partner';
 
         try {
             await submitInquiry(data);

@@ -117,7 +117,7 @@ export default function ContactSegmentedForm() {
 
                             <div className="space-y-2">
                                 <label className="text-xs font-semibold text-slate-600 uppercase tracking-wider">{t('form.message')}</label>
-                                <textarea name="message" rows={4} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 text-slate-900 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none"></textarea>
+                                <textarea required minLength={10} name="message" rows={4} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 text-slate-900 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none"></textarea>
                             </div>
 
                             <TurnstileWidget onVerify={(token) => setToken(token)} />

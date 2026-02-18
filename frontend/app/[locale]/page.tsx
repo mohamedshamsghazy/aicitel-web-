@@ -9,9 +9,6 @@ import ProductPartner from '@/components/ProductPartner';
 import ComplianceSection from '@/components/ComplianceSection';
 import Contact from '@/components/Contact';
 import TrustSection from '@/components/TrustSection';
-import CaseStudiesSection from '@/components/CaseStudiesSection';
-import FAQSection from '@/components/FAQSection';
-import Testimonials from '@/components/Testimonials';
 
 export default function HomePage() {
     return (
@@ -25,13 +22,11 @@ export default function HomePage() {
 
             {/* Secondary Sections */}
             <Mission />
-            <CaseStudiesSection />
             <ComplianceSection />
             <UberUns />
-            <Testimonials />
             <MentoringDetails />
             <EmployeeSuccess />
-            <FAQSection />
+
         </main>
     );
 }

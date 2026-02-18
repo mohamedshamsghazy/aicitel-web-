@@ -1,0 +1,107 @@
+{
+  "@hubspot/api-client": {
+    "current": "11.2.0",
+    "wanted": "11.2.0",
+    "latest": "13.4.0",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/@hubspot/api-client"
+  },
+  "@sentry/nextjs": {
+    "current": "8.55.0",
+    "wanted": "8.55.0",
+    "latest": "10.39.0",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/@sentry/nextjs"
+  },
+  "@types/node": {
+    "current": "20.19.33",
+    "wanted": "20.19.33",
+    "latest": "25.2.3",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/@types/node"
+  },
+  "@vitejs/plugin-react": {
+    "current": "4.7.0",
+    "wanted": "4.7.0",
+    "latest": "5.1.4",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/@vitejs/plugin-react"
+  },
+  "@vitest/coverage-v8": {
+    "current": "2.1.9",
+    "wanted": "2.1.9",
+    "latest": "4.0.18",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/@vitest/coverage-v8"
+  },
+  "eslint": {
+    "current": "9.39.2",
+    "wanted": "9.39.2",
+    "latest": "10.0.0",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/eslint"
+  },
+  "framer-motion": {
+    "current": "12.34.0",
+    "wanted": "12.34.1",
+    "latest": "12.34.1",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/framer-motion"
+  },
+  "happy-dom": {
+    "current": "15.11.7",
+    "wanted": "15.11.7",
+    "latest": "20.6.1",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/happy-dom"
+  },
+  "lucide-react": {
+    "current": "0.563.0",
+    "wanted": "0.563.0",
+    "latest": "0.574.0",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/lucide-react"
+  },
+  "next-intl": {
+    "current": "4.8.2",
+    "wanted": "4.8.3",
+    "latest": "4.8.3",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/next-intl"
+  },
+  "qs": {
+    "current": "6.14.2",
+    "wanted": "6.15.0",
+    "latest": "6.15.0",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/qs"
+  },
+  "react": {
+    "current": "19.2.3",
+    "wanted": "19.2.3",
+    "latest": "19.2.4",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/react"
+  },
+  "react-dom": {
+    "current": "19.2.3",
+    "wanted": "19.2.3",
+    "latest": "19.2.4",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/react-dom"
+  },
+  "tailwind-merge": {
+    "current": "3.4.0",
+    "wanted": "3.4.1",
+    "latest": "3.4.1",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/tailwind-merge"
+  },
+  "vitest": {
+    "current": "2.1.9",
+    "wanted": "2.1.9",
+    "latest": "4.0.18",
+    "dependent": "frontend",
+    "location": "/Users/mohamedshamnsghazy/aicitel/aicitel-web/frontend/node_modules/vitest"
+  }
+}

@@ -1,3 +1,4 @@
+import { Client } from '@hubspot/api-client';
 import { Logger } from './logger';
 
 export interface ContactData {
@@ -17,43 +18,143 @@ export interface CRMAdapter {
 }
 
 /**
- * HubSpot Implementation Pattern
- * This is a structural implementation ready for API keys.
+ * HubSpot CRM Integration
+ * Uses the official @hubspot/api-client SDK
  */
 class HubSpotCRM implements CRMAdapter {
-    private apiKey: string;
-    private portalId: string;
+    private client: Client | null = null;
+    private isConfigured: boolean = false;
 
     constructor() {
-        this.apiKey = process.env.HUBSPOT_API_KEY || '';
-        this.portalId = process.env.HUBSPOT_PORTAL_ID || '';
+        const apiKey = process.env.HUBSPOT_API_KEY || '';
+
+        if (apiKey) {
+            this.client = new Client({ accessToken: apiKey });
+            this.isConfigured = true;
+            Logger.info('CRM: HubSpot integration initialized');
+        } else {
+            Logger.warn('CRM: HubSpot API Key not configured. CRM integration disabled.');
+        }
     }
 
+    /**
+     * Create or update a contact in HubSpot
+     */
     async createContact(data: ContactData): Promise<boolean> {
-        if (!this.apiKey) {
-            Logger.warn('CRM: HubSpot API Key missing. Skipping submission.');
+        if (!this.isConfigured || !this.client) {
+            Logger.info('CRM: HubSpot not configured. Skipping contact sync.');
             return false;
         }
 
         try {
-            // Mock Implementation until API Key is provided
-            // In production: await axios.post(`https://api.hubapi.com/crm/v3/objects/contacts`, ...)
-            Logger.info(`CRM: Pushing contact ${data.email} to HubSpot...`);
+            Logger.info(`CRM: Creating/updating contact ${data.email} in HubSpot...`);
 
-            // Simulate API latency
-            await new Promise(resolve => setTimeout(resolve, 500));
+            // Prepare properties for HubSpot
+            const properties: Record<string, string> = {
+                email: data.email,
+            };
 
-            Logger.info(`CRM: Successfully created contact ${data.email} in HubSpot.`);
+            // Add optional properties
+            if (data.firstname) properties.firstname = data.firstname;
+            if (data.lastname) properties.lastname = data.lastname;
+            if (data.phone) properties.phone = data.phone;
+            if (data.company) properties.company = data.company;
+            if (data.website) properties.website = data.website;
+            if (data.lifecycleStage) properties.lifecyclestage = data.lifecycleStage;
+            if (data.source) properties.hs_lead_source = data.source;
+
+            // Search for existing contact by email
+            const searchResponse = await this.client.crm.contacts.searchApi.doSearch({
+                filterGroups: [{
+                    filters: [{
+                        propertyName: 'email',
+                        operator: 'EQ',
+                        value: data.email,
+                    }]
+                }],
+                properties: ['email', 'firstname', 'lastname'],
+                limit: 1,
+            });
+
+            if (searchResponse.results && searchResponse.results.length > 0) {
+                // Contact exists, update it
+                const contactId = searchResponse.results[0].id;
+                await this.client.crm.contacts.basicApi.update(contactId, {
+                    properties,
+                });
+                Logger.info(`CRM: Successfully updated existing contact ${data.email} (ID: ${contactId})`);
+            } else {
+                // Contact doesn't exist, create new
+                const createResponse = await this.client.crm.contacts.basicApi.create({
+                    properties,
+                });
+                Logger.info(`CRM: Successfully created new contact ${data.email} (ID: ${createResponse.id})`);
+            }
+
             return true;
-        } catch (error) {
-            Logger.error('CRM: Failed to synced contact to HubSpot', error);
+        } catch (error: any) {
+            // Log the error but don't throw - we don't want CRM failures to block form submissions
+            Logger.error('CRM: HubSpot API error', {
+                error: error.message,
+                statusCode: error.statusCode,
+                email: data.email,
+            });
             return false;
         }
     }
 
+    /**
+     * Update an existing contact in HubSpot
+     */
     async updateContact(email: string, data: Partial<ContactData>): Promise<boolean> {
-        // Implementation for updating existing contacts
-        return true;
+        if (!this.isConfigured || !this.client) {
+            return false;
+        }
+
+        try {
+            // Search for contact by email
+            const searchResponse = await this.client.crm.contacts.searchApi.doSearch({
+                filterGroups: [{
+                    filters: [{
+                        propertyName: 'email',
+                        operator: 'EQ',
+                        value: email,
+                    }]
+                }],
+                properties: ['email'],
+                limit: 1,
+            });
+
+            if (searchResponse.results && searchResponse.results.length > 0) {
+                const contactId = searchResponse.results[0].id;
+
+                // Prepare update properties
+                const properties: Record<string, string> = {};
+                if (data.firstname) properties.firstname = data.firstname;
+                if (data.lastname) properties.lastname = data.lastname;
+                if (data.phone) properties.phone = data.phone;
+                if (data.company) properties.company = data.company;
+                if (data.website) properties.website = data.website;
+                if (data.lifecycleStage) properties.lifecyclestage = data.lifecycleStage;
+                if (data.source) properties.hs_lead_source = data.source;
+
+                await this.client.crm.contacts.basicApi.update(contactId, {
+                    properties,
+                });
+
+                Logger.info(`CRM: Successfully updated contact ${email} (ID: ${contactId})`);
+                return true;
+            }
+
+            Logger.warn(`CRM: Contact ${email} not found in HubSpot`);
+            return false;
+        } catch (error: any) {
+            Logger.error('CRM: Failed to update contact', {
+                error: error.message,
+                email,
+            });
+            return false;
+        }
     }
 }
 

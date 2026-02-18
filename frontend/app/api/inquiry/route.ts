@@ -13,8 +13,8 @@ const limiter = rateLimit({
 
 // Zod Validation Schema
 const InquirySchema = z.object({
-    companyName: z.string().min(2, "Company name is required").max(100),
-    contactPerson: z.string().min(2, "Contact person is required").max(100),
+    company: z.string().min(2, "Company name is required").max(100),
+    fullName: z.string().min(2, "Contact person is required").max(100),
     email: z.string().email("Invalid email address"),
     phone: z.string().min(6).max(20),
     message: z.string().min(10, "Message is too short").max(2000),
@@ -59,10 +59,10 @@ export async function POST(req: NextRequest) {
         // 4. CRM Integration
         const crmSuccess = await CRM.createContact({
             email: validData.email,
-            firstname: validData.contactPerson.split(' ')[0],
-            lastname: validData.contactPerson.split(' ').slice(1).join(' '),
+            firstname: validData.fullName.split(' ')[0],
+            lastname: validData.fullName.split(' ').slice(1).join(' '),
             phone: validData.phone,
-            company: validData.companyName,
+            company: validData.company,
             lifecycleStage: 'lead',
             source: 'Inquiry Form'
         });
@@ -84,19 +84,36 @@ export async function POST(req: NextRequest) {
             headers['Authorization'] = `Bearer ${STRAPI_TOKEN}`;
         }
 
-        const payload = {
+        let strapiEndpoint = 'api/general-inquiries';
+        let strapiPayload = {
             data: {
-                ...validData,
-                type: validData.type || 'General',
-                // Remove token from storage payload
-                token: undefined
+                companyName: validData.company,
+                contactPerson: validData.fullName,
+                email: validData.email,
+                phone: validData.phone,
+                message: validData.message,
+                // type field removed as it is not part of general-inquiry schema
             }
         };
 
-        const strapiResponse = await fetch(`${STRAPI_URL}/api/inquiries`, {
+        if (validData.type === 'Partner') {
+            strapiEndpoint = 'api/partners';
+            strapiPayload = {
+                data: {
+                    companyName: validData.company,
+                    contactPerson: validData.fullName,
+                    email: validData.email,
+                    phone: validData.phone,
+                    message: validData.message,
+                    // No 'type' field in Partner content type
+                }
+            };
+        }
+
+        const strapiResponse = await fetch(`${STRAPI_URL}/${strapiEndpoint}`, {
             method: 'POST',
             headers,
-            body: JSON.stringify(payload),
+            body: JSON.stringify(strapiPayload),
         });
 
         const data = await strapiResponse.json();

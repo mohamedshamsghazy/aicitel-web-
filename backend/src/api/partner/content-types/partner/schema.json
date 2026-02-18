@@ -1,0 +1,33 @@
+{
+    "kind": "collectionType",
+    "collectionName": "partners",
+    "info": {
+        "singularName": "partner",
+        "pluralName": "partners",
+        "displayName": "Partner",
+        "description": "Partnership inquiries"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "companyName": {
+            "type": "string"
+        },
+        "contactPerson": {
+            "type": "string",
+            "required": true
+        },
+        "email": {
+            "type": "email",
+            "required": true
+        },
+        "phone": {
+            "type": "string"
+        },
+        "message": {
+            "type": "text"
+        }
+    }
+}

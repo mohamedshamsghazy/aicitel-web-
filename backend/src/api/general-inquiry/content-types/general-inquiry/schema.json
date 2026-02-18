@@ -1,0 +1,41 @@
+{
+    "kind": "collectionType",
+    "collectionName": "general_inquiries",
+    "info": {
+        "singularName": "general-inquiry",
+        "pluralName": "general-inquiries",
+        "displayName": "General Inquiry",
+        "description": "General contact inquiries"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "companyName": {
+            "type": "string"
+        },
+        "contactPerson": {
+            "type": "string",
+            "required": true
+        },
+        "email": {
+            "type": "email",
+            "required": true
+        },
+        "phone": {
+            "type": "string"
+        },
+        "message": {
+            "type": "text"
+        },
+        "type": {
+            "type": "enumeration",
+            "enum": [
+                "Partner",
+                "General"
+            ],
+            "default": "General"
+        }
+    }
+}

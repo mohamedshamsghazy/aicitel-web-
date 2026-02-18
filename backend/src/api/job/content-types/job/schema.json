@@ -61,6 +61,16 @@
     "closingDate": {
       "type": "date"
     },
+    "employmentType": {
+      "type": "enumeration",
+      "enum": [
+        "full-time",
+        "part-time",
+        "both"
+      ],
+      "default": "both",
+      "required": true
+    },
     "metaTitle": {
       "type": "string",
       "pluginOptions": {

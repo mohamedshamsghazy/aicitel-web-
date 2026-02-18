@@ -2,7 +2,7 @@ import { Link } from '@/navigation';
 import { useTranslations } from 'next-intl';
 
 export default function ThankYouPage() {
-    const t = useTranslations('ContactForms');
+    const t = useTranslations('ThankYou');
 
     return (
         <main className="min-h-screen bg-slate-50 flex items-center justify-center px-4">
@@ -14,19 +14,18 @@ export default function ThankYouPage() {
                 </div>
 
                 <h1 className="text-4xl font-bold text-slate-900 mb-4">
-                    {/* Hardcoded fallback if translation missing, ideally use t('thankYouTitle') */}
-                    Message Received
+                    {t('title')}
                 </h1>
 
                 <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                    Thank you for reaching out to Aicitel. Our team has received your submission and will process it shortly. You should receive a confirmation email within 24 hours.
+                    {t('description')}
                 </p>
 
                 <Link
                     href="/"
                     className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-primary-light transition-all shadow-md hover:shadow-lg"
                 >
-                    Return to Home
+                    {t('button')}
                 </Link>
             </div>
         </main>

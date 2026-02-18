@@ -4,7 +4,7 @@
     "info": {
         "singularName": "application",
         "pluralName": "applications",
-        "displayName": "Application",
+        "displayName": "Job Application",
         "description": "Job applications"
     },
     "options": {
@@ -50,6 +50,44 @@
         },
         "internalNotes": {
             "type": "blocks"
+        },
+        "yearsOfExperience": {
+            "type": "integer",
+            "min": 0,
+            "max": 50
+        },
+        "availabilityDate": {
+            "type": "date"
+        },
+        "salaryExpectationsMin": {
+            "type": "integer",
+            "min": 0
+        },
+        "salaryExpectationsMax": {
+            "type": "integer",
+            "min": 0
+        },
+        "currentPosition": {
+            "type": "string",
+            "maxLength": 200
+        },
+        "currentCompany": {
+            "type": "string",
+            "maxLength": 200
+        },
+        "coverLetter": {
+            "type": "text"
+        },
+        "linkedinProfile": {
+            "type": "string",
+            "maxLength": 500
+        },
+        "portfolioWebsite": {
+            "type": "string",
+            "maxLength": 500
+        },
+        "additionalNotes": {
+            "type": "text"
         }
     }
 }

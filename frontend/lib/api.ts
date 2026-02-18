@@ -11,6 +11,7 @@ export interface Job {
     featuredOrder: number;
     jobStatus: 'Open' | 'Closed' | 'Archived';
     closingDate: string | null;
+    employmentType: 'full-time' | 'part-time' | 'both';
     metaTitle?: string;
     metaDescription?: string;
     locale: string;
@@ -18,14 +19,7 @@ export interface Job {
     localizations?: { data: Job[] };
 }
 
-export interface FAQ {
-    id: number;
-    documentId: string;
-    question: string;
-    answer: any;
-    category: 'Career' | 'Partner';
-    order: number;
-}
+
 
 export async function getJobs(locale: string) {
     try {
@@ -86,22 +80,7 @@ export async function getJobBySlug(slug: string, locale: string) {
     }
 }
 
-export async function getFAQs(locale: string) {
-    try {
-        const data = await fetchAPI('/faqs', {
-            locale,
-            sort: ['order:asc'],
-            populate: '*',
-        });
-        return data.data.map((item: any) => ({
-            id: item.id,
-            ...item.attributes
-        })) as FAQ[];
-    } catch (error) {
-        console.warn(`[getFAQs] Failed to fetch FAQs for locale ${locale}:`, error);
-        return [];
-    }
-}
+
 
 export async function submitApplication(formData: FormData) {
     const response = await fetch('/api/apply', {

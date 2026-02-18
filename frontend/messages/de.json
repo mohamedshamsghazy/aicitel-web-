@@ -678,5 +678,65 @@
             "title": "Optimierung",
             "description": "Kontinuierliche Analyse und Verbesserung der Ergebnisse."
         }
+    },
+    "JobDetail": {
+        "interested": "Interessiert?",
+        "applyQuickly": "Bewirb dich jetzt in weniger als 2 Minuten. Wir melden uns umgehend bei dir.",
+        "applyNowButton": "Jetzt bewerben",
+        "applyFormTitle": "Jetzt bewerben",
+        "fastProcess": "Schneller Prozess",
+        "noCoverLetter": "Kein Anschreiben nötig",
+        "personalContact": "Persönlicher Ansprechpartner",
+        "employmentType": {
+            "fullTime": "Vollzeit",
+            "partTime": "Teilzeit",
+            "both": "Vollzeit / Teilzeit"
+        }
+    },
+    "JobApplicationForm": {
+        "formTitle": "Bewerbungsformular",
+        "applyingFor": "Bewerbung für",
+        "sections": {
+            "personalInfo": "Persönliche Daten",
+            "professionalDetails": "Berufliche Details",
+            "links": "Profile & Portfolio",
+            "materials": "Unterlagen"
+        },
+        "labels": {
+            "fullName": "Vollständiger Name",
+            "email": "E-Mail-Adresse",
+            "phone": "Telefonnummer",
+            "currentPosition": "Aktuelle Position",
+            "currentCompany": "Aktuelles Unternehmen",
+            "yearsOfExperience": "Jahre Berufserfahrung",
+            "availabilityDate": "Frühestes Startdatum",
+            "salaryExpectationsMin": "Gehalt Min",
+            "salaryExpectationsMax": "Gehalt Max",
+            "linkedinProfile": "LinkedIn Profil",
+            "portfolioWebsite": "Portfolio Website",
+            "cv": "Lebenslauf hochladen",
+            "coverLetter": "Anschreiben",
+            "additionalNotes": "Zusätzliche Anmerkungen"
+        },
+        "placeholders": {
+            "currentPosition": "z.B. Sales Manager",
+            "currentCompany": "z.B. Musterfirma GmbH",
+            "uploadCV": "Klicken zum Hochladen oder Drag & Drop",
+            "coverLetter": "Erzählen Sie uns, warum Sie perfekt passen..."
+        },
+        "buttons": {
+            "submit": "Bewerbung absenden",
+            "submitting": "Wird gesendet..."
+        },
+        "successTitle": "Bewerbung eingegangen!",
+        "successMessage": "Danke für Ihre Bewerbung als {jobTitle}. Wir werden Ihre Unterlagen prüfen und uns in Kürze melden.",
+        "submitAnother": "Weitere Bewerbung senden",
+        "errorSecurityCheck": "Bitte bestätigen Sie die Sicherheitsprüfung.",
+        "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    },
+    "ThankYou": {
+        "title": "Nachricht erhalten",
+        "description": "Vielen Dank für Ihre Nachricht an Aicitel. Unser Team hat Ihre Einsendung erhalten und wird sie in Kürze bearbeiten. Sie sollten innerhalb von 24 Stunden eine Bestätigungs-E-Mail erhalten.",
+        "button": "Zurück zur Startseite"
     }
 }
