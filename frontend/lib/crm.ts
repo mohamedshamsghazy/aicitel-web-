@@ -75,6 +75,8 @@ class HubSpotCRM implements CRMAdapter {
                 }],
                 properties: ['email', 'firstname', 'lastname'],
                 limit: 1,
+                after: undefined,
+                sorts: [],
             });
 
             if (searchResponse.results && searchResponse.results.length > 0) {
@@ -124,6 +126,8 @@ class HubSpotCRM implements CRMAdapter {
                 }],
                 properties: ['email'],
                 limit: 1,
+                after: undefined,
+                sorts: [],
             });
 
             if (searchResponse.results && searchResponse.results.length > 0) {
