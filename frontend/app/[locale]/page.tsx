@@ -12,7 +12,7 @@ import TrustSection from '@/components/TrustSection';
 
 export default function HomePage() {
     return (
-        <main className="min-h-screen bg-white font-sans text-slate-900 selection:bg-primary/20 selection:text-primary scroll-smooth">
+        <>
             <Hero />
             <TrustSection />
             <ProductPartner /> {/* Services/Solutions */}
@@ -26,7 +26,6 @@ export default function HomePage() {
             <UberUns />
             <MentoringDetails />
             <EmployeeSuccess />
-
-        </main>
+        </>
     );
 }

@@ -59,11 +59,11 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale} dir={dir} className="scroll-smooth" suppressHydrationWarning>
-            <body className={`${inter.variable} font-sans bg-white text-gray-900 antialiased`} suppressHydrationWarning>
+            <body className={`${inter.variable} font-sans bg-gradient-to-br from-background-dark via-background-card to-background-dark text-text-primary antialiased`} suppressHydrationWarning>
                 <JsonLd />
                 <NextIntlClientProvider messages={messages}>
                     <StickyHeader />
-                    <main className="pt-20">
+                    <main className="pt-20 relative">
                         {children}
                     </main>
                     {/* FloatingLanguageSelector removed */}
