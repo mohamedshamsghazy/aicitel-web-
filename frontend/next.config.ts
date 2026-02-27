@@ -5,6 +5,7 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: 'standalone' as const, // Required for Docker
     async headers() {
         return [
             {

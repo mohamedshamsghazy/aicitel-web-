@@ -1,4 +1,5 @@
 import { Client } from '@hubspot/api-client';
+import { FilterOperatorEnum } from '@hubspot/api-client/lib/codegen/crm/contacts';
 import { Logger } from './logger';
 
 export interface ContactData {
@@ -10,6 +11,8 @@ export interface ContactData {
     website?: string;
     lifecycleStage?: 'lead' | 'subscriber' | 'customer';
     source?: string;
+    jobTitle?: string;
+    message?: string;
 }
 
 export interface CRMAdapter {
@@ -62,18 +65,22 @@ class HubSpotCRM implements CRMAdapter {
             if (data.website) properties.website = data.website;
             if (data.lifecycleStage) properties.lifecyclestage = data.lifecycleStage;
             if (data.source) properties.hs_lead_source = data.source;
+            if (data.jobTitle) properties.jobtitle = data.jobTitle;
+            if (data.message) properties.message = data.message;
 
             // Search for existing contact by email
             const searchResponse = await this.client.crm.contacts.searchApi.doSearch({
                 filterGroups: [{
                     filters: [{
                         propertyName: 'email',
-                        operator: 'EQ',
+                        operator: FilterOperatorEnum.Eq,
                         value: data.email,
                     }]
                 }],
+                sorts: ['email'],
                 properties: ['email', 'firstname', 'lastname'],
                 limit: 1,
+                after: '0',
             });
 
             if (searchResponse.results && searchResponse.results.length > 0) {
@@ -87,6 +94,7 @@ class HubSpotCRM implements CRMAdapter {
                 // Contact doesn't exist, create new
                 const createResponse = await this.client.crm.contacts.basicApi.create({
                     properties,
+                    associations: [],
                 });
                 Logger.info(`CRM: Successfully created new contact ${data.email} (ID: ${createResponse.id})`);
             }
@@ -117,12 +125,14 @@ class HubSpotCRM implements CRMAdapter {
                 filterGroups: [{
                     filters: [{
                         propertyName: 'email',
-                        operator: 'EQ',
+                        operator: FilterOperatorEnum.Eq,
                         value: email,
                     }]
                 }],
+                sorts: ['email'],
                 properties: ['email'],
                 limit: 1,
+                after: '0',
             });
 
             if (searchResponse.results && searchResponse.results.length > 0) {

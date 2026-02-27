@@ -1,0 +1,60 @@
+version: '3'
+
+services:
+  # Strapi Backend
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./backend/.env
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_NAME: aicitel
+      DATABASE_USERNAME: strapi
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      NODE_ENV: production
+    ports:
+      - '1337:1337'
+    depends_on:
+      - postgres
+    networks:
+      - aicitel-network
+
+  # Next.js Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_STRAPI_URL: https://api.aicitel.com # Change this to your actual API domain
+    restart: unless-stopped
+    env_file: ./frontend/.env.local
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
+    networks:
+      - aicitel-network
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: aicitel
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    volumes:
+      - strapi-data:/var/lib/postgresql/data
+    networks:
+      - aicitel-network
+
+networks:
+  aicitel-network:
+    driver: bridge
+
+volumes:
+  strapi-data:
