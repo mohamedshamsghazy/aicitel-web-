@@ -1,4 +1,5 @@
 import { Client } from '@hubspot/api-client';
+import { FilterOperatorEnum } from '@hubspot/api-client/lib/codegen/crm/contacts';
 import { Logger } from './logger';
 
 export interface ContactData {
@@ -68,7 +69,7 @@ class HubSpotCRM implements CRMAdapter {
                 filterGroups: [{
                     filters: [{
                         propertyName: 'email',
-                        operator: 'Eq',
+                        operator: FilterOperatorEnum.Eq,
                         value: data.email,
                     }]
                 }],
@@ -117,7 +118,7 @@ class HubSpotCRM implements CRMAdapter {
                 filterGroups: [{
                     filters: [{
                         propertyName: 'email',
-                        operator: 'Eq',
+                        operator: FilterOperatorEnum.Eq,
                         value: email,
                     }]
                 }],
