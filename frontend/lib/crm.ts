@@ -68,7 +68,7 @@ class HubSpotCRM implements CRMAdapter {
                 filterGroups: [{
                     filters: [{
                         propertyName: 'email',
-                        operator: 'EQ',
+                        operator: 'Eq',
                         value: data.email,
                     }]
                 }],
@@ -117,7 +117,7 @@ class HubSpotCRM implements CRMAdapter {
                 filterGroups: [{
                     filters: [{
                         propertyName: 'email',
-                        operator: 'EQ',
+                        operator: 'Eq',
                         value: email,
                     }]
                 }],
