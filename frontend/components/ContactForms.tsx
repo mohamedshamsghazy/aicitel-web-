@@ -103,7 +103,7 @@ export default function ContactForms({ defaultTab = 'applicants' }: ContactForms
                             </div>
                             <div>
                                 <h4 className="font-bold text-white/90 text-sm uppercase tracking-wide mb-1">{t('contactLabels.visitUs')}</h4>
-                                <p className="text-slate-300 leading-relaxed" dangerouslySetInnerHTML={{ __html: t('contactLabels.address') }} />
+                                <p className="text-slate-300 leading-relaxed">{t('contactLabels.address')}</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
